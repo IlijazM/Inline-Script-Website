@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Style -->
-    <link href="/Inline-Script-Website/styles/main.css" rel="stylesheet">
-    <link href="/Inline-Script-Website/styles/codepretify.css" rel="stylesheet">
+    <link href="/styles/main.css" rel="stylesheet">
+    <link href="/styles/codepretify.css" rel="stylesheet">
 
     <!-- Font awesome -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -21,23 +19,31 @@
     <script src="https://ilijazm.github.io/burning-brackets-js/burning-brackets.min.js"></script>
 
     <!-- Scripts -->
-    <script src="/Inline-Script-Website/scripts/fade.js" defer></script>
-    <script src="/Inline-Script-Website/scripts/app.js" defer></script>
-    
-    <div load="/Inline-Script-Website/Documentation/Macros/head.html"></div>
+    <script>
+        const globalPath = ''
+        const localPath = '/Documentation/Macros'
+    </script>
+    <script src="/scripts/app.js"></script>
 </head>
 
-<body style="display:none;">
+<body>
     <div id="fade">
-        <link load="/Inline-Script-Website/components/app.html" />
-        <div load="/Inline-Script-Website/components/header.html" title={{productName}} buttonhref="/Inline-Script-Website/Install"></div>
-        <div load="/Inline-Script-Website/Documentation/Macros/body.html"></div>
-        <div load="/Inline-Script-Website/components/footer.html"></div>
+        <div load="/components/header.html" title="{{productName}}" buttonhref="/Install"></div>
+        <div load="/Documentation/Macros/Macros.html"></div>
+        <div load="/components/footer.html"></div>
     </div>
-
+    
+    <script src="/scripts/fade.js"></script>
     <script>
-        const globalPath = '/Inline-Script-Website'
-        const localPath = '/Inline-Script-Website/Documentation/Macros'
+        setTimeout(() => {
+            fadeIn()
+        }, 1000)
+
+        if (false !== false) {
+            compileInlineScript()
+        }
+
+        fadeIn()
     </script>
+
 </body>
-</html>

@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Style -->
-    <link href="/Inline-Script-Website/styles/main.css" rel="stylesheet">
-    <link href="/Inline-Script-Website/styles/codepretify.css" rel="stylesheet">
+    <link href="/styles/main.css" rel="stylesheet">
+    <link href="/styles/codepretify.css" rel="stylesheet">
 
     <!-- Font awesome -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- Code prettifier -->
-    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    
 
     <!-- Inline script -->
     <script src="https://ilijazm.github.io/Inline-Script/inline-script.js"></script>
@@ -21,23 +19,154 @@
     <script src="https://ilijazm.github.io/burning-brackets-js/burning-brackets.min.js"></script>
 
     <!-- Scripts -->
-    <script src="/Inline-Script-Website/scripts/fade.js" defer></script>
-    <script src="/Inline-Script-Website/scripts/app.js" defer></script>
-    
-    <div load="/Inline-Script-Website/Impressum/head.html"></div>
-</head>
+    <script>
+        const globalPath = ''
+        const localPath = '/Impressum'
+    </script>
+    <script src="/scripts/app.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/prettify.css"></head>
 
-<body style="display:none;">
-    <div id="fade">
-        <link load="/Inline-Script-Website/components/app.html" />
-        <div load="/Inline-Script-Website/components/header.html" title={{productName}} buttonhref="/Inline-Script-Website/Install"></div>
-        <div load="/Inline-Script-Website/Impressum/body.html"></div>
-        <div load="/Inline-Script-Website/components/footer.html"></div>
+<body finished-compiling="true">
+    <div id="fade" style="opacity: 1; transition: opacity 200ms linear;">
+        <div load="/components/header.html" title="Inline-script.js" buttonhref="/Install"><div class="scoped-css-id-0">
+    <div class="outer">
+        <header class="wrapper">
+            <div class="flex"><h3 class="inline-script-uid-0 has-inline-script">Inline-script.js</h3></div>
+            <a href="https://github.com/IlijazM/Inline-Script " target="_blank" class="flex right icon">
+                <i class="fa fa-github fa-lg"></i>
+            </a>
+        </header>
+    
+        <nav class="wrapper">
+            <div class="flex left inline-script-uid-1 has-inline-script"><href class=" inline-script-uid-2 has-inline-script" to="/">Home</href><href class=" inline-script-uid-3 has-inline-script" to="/Showcase">Showcase</href><href class=" inline-script-uid-4 has-inline-script" to="/Documentation">Documentation</href></div>
+            <div class="flex right">
+                <href class="button primary" to="/Install">Install</href>
+            </div>
+        </nav>
     </div>
 
+    <div class="distance"></div>
+
+    <style>
+.scoped-css-id-0 .outer {
+            position: fixed;
+            width: 100%;
+            z-index: 10;
+        }
+
+.scoped-css-id-0 .distance {
+            height: 110px;
+        }
+
+.scoped-css-id-0 header {
+            display: flex;
+            align-items: center;
+
+            height: 40px;
+
+            background: #222;
+            color: #ddd;
+        }
+
+.scoped-css-id-0 nav {
+            display: flex;
+            align-items: center;
+
+            height: 70px;
+
+            background: #e0e0e0;
+        }
+
+.scoped-css-id-0 a {
+            color: white;
+
+            text-decoration: none;
+        }
+
+.scoped-css-id-0 nav .left a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 100%;
+            padding: 0 20px;
+
+            color: rgba(0, 0, 0, 0.4);
+            transition: color 200ms linear;
+        }
+
+.scoped-css-id-0 nav .left a.current {
+            color: black;
+        }
+
+.scoped-css-id-0 nav .left a:hover {
+            color: black;
+        }
+
+.scoped-css-id-0 .flex {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+.scoped-css-id-0 .right {
+            margin-left: auto;
+        }
+
+.scoped-css-id-0 .icon {
+            color: white;
+            transition: color 200ms linear;
+        }
+
+.scoped-css-id-0 .icon:hover {
+            color: #aaa;
+        }</style>
+</div></div>
+        <div load="/Impressum/Impressum.html"><div>
+    <title>Inline Script - Impressum</title>
+</div></div>
+        <div load="/components/footer.html"><div>
+    <footer></footer>
+
+    <style>
+        footer {
+            position: absolute;
+            z-index: 10;
+            
+            width: 100%;
+            height: 500px;
+
+            margin-top: 200px;
+
+            background: #444;
+        }
+    </style>
+</div></div>
+    </div>
+    
+    <script src="/scripts/fade.js"></script>
     <script>
-        const globalPath = '/Inline-Script-Website'
-        const localPath = '/Inline-Script-Website/Impressum'
+        setTimeout(() => {
+            fadeIn()
+        }, 1000)
+
+        if (false !== false) {
+            compileInlineScript()
+        }
+
+        fadeIn()
     </script>
-</body>
-</html>
+
+<script>if (inlineScriptCompile === false) {
+let el;
+render=(el, callback)=>{
+    el.render = function() {
+        try {
+            handleRenderResults(this, callback(this.inlineScript))
+        } catch (err) {
+            handleExceptionResult(this, err)
+        }
+        return this
+    }
+}
+}</script></body>

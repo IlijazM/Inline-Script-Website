@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Style -->
-    <link href="/Inline-Script-Website/styles/main.css" rel="stylesheet">
-    <link href="/Inline-Script-Website/styles/codepretify.css" rel="stylesheet">
+    <link href="/styles/main.css" rel="stylesheet">
+    <link href="/styles/codepretify.css" rel="stylesheet">
 
     <!-- Font awesome -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- Code prettifier -->
-    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    
 
     <!-- Inline script -->
     <script src="https://ilijazm.github.io/Inline-Script/inline-script.js"></script>
@@ -21,23 +19,361 @@
     <script src="https://ilijazm.github.io/burning-brackets-js/burning-brackets.min.js"></script>
 
     <!-- Scripts -->
-    <script src="/Inline-Script-Website/scripts/fade.js" defer></script>
-    <script src="/Inline-Script-Website/scripts/app.js" defer></script>
-    
-    <div load="/Inline-Script-Website/Documentation/Scope/head.html"></div>
-</head>
+    <script>
+        const globalPath = ''
+        const localPath = '/Documentation/Scope'
+    </script>
+    <script src="/scripts/app.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/prettify.css"><script>
+        PR.prettyPrint()
+    </script></head>
 
-<body style="display:none;">
-    <div id="fade">
-        <link load="/Inline-Script-Website/components/app.html" />
-        <div load="/Inline-Script-Website/components/header.html" title={{productName}} buttonhref="/Inline-Script-Website/Install"></div>
-        <div load="/Inline-Script-Website/Documentation/Scope/body.html"></div>
-        <div load="/Inline-Script-Website/components/footer.html"></div>
+<body finished-compiling="true">
+    <div id="fade" style="opacity: 1; transition: opacity 200ms linear;">
+        <div load="/components/header.html" title="Inline-script.js" buttonhref="/Install"><div class="scoped-css-id-0">
+    <div class="outer">
+        <header class="wrapper">
+            <div class="flex"><h3 class="inline-script-uid-0 has-inline-script">Inline-script.js</h3></div>
+            <a href="https://github.com/IlijazM/Inline-Script " target="_blank" class="flex right icon">
+                <i class="fa fa-github fa-lg"></i>
+            </a>
+        </header>
+    
+        <nav class="wrapper">
+            <div class="flex left inline-script-uid-1 has-inline-script"><href class=" inline-script-uid-2 has-inline-script" to="/">Home</href><href class=" inline-script-uid-3 has-inline-script" to="/Showcase">Showcase</href><href class=" inline-script-uid-4 has-inline-script" to="/Documentation">Documentation</href></div>
+            <div class="flex right">
+                <href class="button primary" to="/Install">Install</href>
+            </div>
+        </nav>
+    </div>
+
+    <div class="distance"></div>
+
+    <style>
+.scoped-css-id-0 .outer {
+            position: fixed;
+            width: 100%;
+            z-index: 10;
+        }
+
+.scoped-css-id-0 .distance {
+            height: 110px;
+        }
+
+.scoped-css-id-0 header {
+            display: flex;
+            align-items: center;
+
+            height: 40px;
+
+            background: #222;
+            color: #ddd;
+        }
+
+.scoped-css-id-0 nav {
+            display: flex;
+            align-items: center;
+
+            height: 70px;
+
+            background: #e0e0e0;
+        }
+
+.scoped-css-id-0 a {
+            color: white;
+
+            text-decoration: none;
+        }
+
+.scoped-css-id-0 nav .left a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 100%;
+            padding: 0 20px;
+
+            color: rgba(0, 0, 0, 0.4);
+            transition: color 200ms linear;
+        }
+
+.scoped-css-id-0 nav .left a.current {
+            color: black;
+        }
+
+.scoped-css-id-0 nav .left a:hover {
+            color: black;
+        }
+
+.scoped-css-id-0 .flex {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+.scoped-css-id-0 .right {
+            margin-left: auto;
+        }
+
+.scoped-css-id-0 .icon {
+            color: white;
+            transition: color 200ms linear;
+        }
+
+.scoped-css-id-0 .icon:hover {
+            color: #aaa;
+        }</style>
+</div></div>
+        <div load="/Documentation/Scope/Scope.html"><div>
+    <title>Inline Script - Scope</title>
+
+    <div load="/components/learn.html"><div class="scoped-css-id-1">
+    <div class="learn">
+        <nav>
+            <ul class="inline-script-uid-5 has-inline-script"><href to="/Documentation"><li><a class=" inline-script-uid-6 has-inline-script">Introduction</a></li></href><href to="/Documentation/Inline-Script-Syntax"><li><a class=" inline-script-uid-7 has-inline-script">Inline Script Syntax</a></li></href><href to="/Documentation/Updating-an-element"><li><a class=" inline-script-uid-8 has-inline-script">Updating an element</a></li></href><href to="/Documentation/Button-Syntax"><li><a class=" inline-script-uid-9 has-inline-script">Button syntax</a></li></href><href to="/Documentation/HTML-Syntax"><li><a class=" inline-script-uid-10 has-inline-script">HTML Syntax</a></li></href><href to="/Documentation/Manipulating-attributes"><li><a class=" inline-script-uid-11 has-inline-script">Manipulating attributes</a></li></href><href to="/Documentation/Loading-files"><li><a class=" inline-script-uid-12 has-inline-script">Loading files</a></li></href><href to="/Documentation/Scope"><li><a class=" inline-script-uid-13 has-inline-script">Scope</a></li></href><href to="/Documentation/Scoped-css"><li><a class=" inline-script-uid-14 has-inline-script">Scope CSS</a></li></href><href to="/Documentation/Macros"><li><a class=" inline-script-uid-15 has-inline-script">Macros</a></li></href><href to="/Documentation/Templates"><li><a class=" inline-script-uid-16 has-inline-script">Templates</a></li></href></ul>
+        </nav>
+        <main>
+            <div id="content" class="inline-script-uid-17 has-inline-script"><h1>Scope</h1><h2>Basics</h2><p>
+            The variable <var>scope</var> points at the outer element in another file.
+            You can use the variable to safely query select element that only appear in the current file.
+            You can access this variable using the inline script syntax.
+        </p><pre class="prettyprint prettyprinted" style=""><span class="tag">&lt;div&gt;</span><span class="pln">
+    </span><span class="tag">&lt;h1&gt;&lt;/h1&gt;</span><span class="pln">
+    </span><span class="tag">&lt;div&gt;</span><span class="pln">{{
+        scope.querySelect('h1').innerHTML = 'Hello, world'
+    }}</span><span class="tag">&lt;/div&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span></pre></div>
+        </main>
+
+        <div class="nav-right inline-script-uid-18 has-inline-script" style="background: red; color: yellow; font-size: 20px;">TypeError: el.html.replaceAll is not a function</div>
+
+        <main class="nav inline-script-uid-19 has-inline-script"><a href="/Documentation/Loading-files">
+                    <i class="fa fa-angle-left"></i>
+                    <b class="color">Previous</b>
+                    <b class="inline-script-uid-20 has-inline-script">Loading files</b>
+                </a><a href="/Documentation/Scoped-css">
+                    <b class="color">Next</b>
+                    <b class="inline-script-uid-21 has-inline-script">Scope CSS</b>
+                    <i class="fa fa-angle-right"></i>
+                </a></main>
     </div>
 
     <script>
-        const globalPath = '/Inline-Script-Website'
-        const localPath = '/Inline-Script-Website/Documentation/Scope'
+        PR.prettyPrint()
     </script>
-</body>
-</html>
+
+    <style>
+.scoped-css-id-1 nav {
+            z-index: 5;
+            position: absolute;
+
+            top: 0;
+
+            width: 250px;
+            height: 100%;
+
+            padding-top: 110px;
+
+            background: whitesmoke;
+            
+        }
+
+.scoped-css-id-1 nav::after {
+            content: '';
+
+            position: fixed;
+
+            top: 0;
+            left: 0;
+
+            width: 250px;
+            height: 100vh;
+
+            box-shadow: 6px 0 6px rgba(0,0,0,.1);
+
+            pointer-events: none;
+        }
+
+.scoped-css-id-1 nav ul {
+            list-style: none;
+            margin: 0;
+            margin-top: 15px;
+            padding: 0;
+        }
+
+.scoped-css-id-1 nav li {
+            display: flex;
+            align-items: center;
+            height: 40px;
+
+            padding-left: 15px;
+
+            cursor: pointer;
+        }
+
+.scoped-css-id-1 nav li:hover {
+            background: #ddd;
+        }
+
+.scoped-css-id-1 nav li:hover a {
+            color: var(--primary);
+        }
+
+.scoped-css-id-1 nav a {
+            text-decoration: none;
+            font-size: 14px;
+            color: #444;
+            text-transform: uppercase;
+        }
+
+.scoped-css-id-1 nav a.current {
+            color: var(--primary);
+        }
+
+.scoped-css-id-1 .nav, .nav a {
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+            display: flex;
+        }
+
+.scoped-css-id-1 .nav a:nth-child(2) *:nth-child(1) {
+            text-align: right !important;
+            margin-left: auto;
+        }
+
+.scoped-css-id-1 .nav a {
+            width: 100%;
+        }
+
+.scoped-css-id-1 .nav b {
+            font-weight: normal;
+            margin: 0 5px;
+        }
+
+.scoped-css-id-1 .nav b.color {
+            color: var(--primary);
+        }
+
+.scoped-css-id-1 .nav i {
+            display: inline;
+            margin: 0 15px;
+        }
+
+.scoped-css-id-1 .nav span {
+            width: 100%;
+        }
+
+.scoped-css-id-1 .nav-right {
+            position: absolute;
+
+            top: 120px;
+            right: 10px;
+
+            width: calc(100vw - 1400px);
+            max-width: 250px;
+
+            text-align: right;
+        }
+
+.scoped-css-id-1 .nav-right li {
+            list-style-type: none;
+
+            padding: 5px;
+
+            cursor: pointer;
+        }
+
+.scoped-css-id-1 .nav-right li:hover {
+            background: #ddd;
+        }
+
+.scoped-css-id-1 main {
+            transform: translateX(300px);
+            width: calc(100vw - 400px);
+            max-width: 1000px;
+
+            padding-top: 20px;
+        }
+
+.scoped-css-id-1 h1::after {
+            display: none;
+        }
+
+.scoped-css-id-1 h1 {
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+.scoped-css-id-1 h2 {
+            font-size: 20px;
+            font-weight: 500;
+
+            transition: background 200ms linear;
+        }
+
+.scoped-css-id-1 p {
+            font-size: 14px;
+            color: #444;
+        }
+
+.scoped-css-id-1 footer {
+            width: calc(100vw - 267px);
+            transform: translateX(250px);
+        }
+
+.scoped-css-id-1 .cp_embed_wrapper {
+            margin: 0;
+            padding: 0;
+        }
+
+.scoped-css-id-1 .mark {
+            background: rgba(255, 208, 0, 0.7);
+        }</style>
+</div></div>
+</div></div>
+        <div load="/components/footer.html"><div>
+    <footer></footer>
+
+    <style>
+        footer {
+            position: absolute;
+            z-index: 10;
+            
+            width: 100%;
+            height: 500px;
+
+            margin-top: 200px;
+
+            background: #444;
+        }
+    </style>
+</div></div>
+    </div>
+    
+    <script src="/scripts/fade.js"></script>
+    <script>
+        setTimeout(() => {
+            fadeIn()
+        }, 1000)
+
+        if (false !== false) {
+            compileInlineScript()
+        }
+
+        fadeIn()
+    </script>
+
+<script>if (inlineScriptCompile === false) {
+let el;
+render=(el, callback)=>{
+    el.render = function() {
+        try {
+            handleRenderResults(this, callback(this.inlineScript))
+        } catch (err) {
+            handleExceptionResult(this, err)
+        }
+        return this
+    }
+}
+}</script></body>
