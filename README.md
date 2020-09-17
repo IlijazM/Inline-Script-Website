@@ -1,9 +1,11 @@
-# Inline-Script-Boilerplate
+# Inline-Script-Website
+
+[Visit](https://ilijazm.github.io/Inline-Script-Website/)
 
 ## Install
 
 ``` bash
-npx degit IlijazM/Inline-Script-Boilerplate
+npx degit IlijazM/Inline-Script-Website
 ```
 
 ## Build Setup
