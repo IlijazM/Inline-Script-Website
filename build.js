@@ -5,4 +5,4 @@ const template = require('./template')
  * you must change the repository name.
  */
 
-template.generate('/Inline-Script-Boilerplate')
+template.generate('/Inline-Script-Website')
