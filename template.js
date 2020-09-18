@@ -15,7 +15,6 @@ function generateFiles(root, route, template, pathName) {
         .replace(/\$globalPath/gm, pathName)
         .replace(/\$localPath/gm, pathName + route.url)
         .replace(/\$body/gm, pathName + route.url + '/' + route.name + '.html')
-        .replace(/\$compile/gm, '"$compiler$"')
 
     fs.mkdirSync(root + route.url, { recursive: true }, (err) => {
         if (err) throw err

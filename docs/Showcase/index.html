@@ -26,24 +26,52 @@
     <script src="/scripts/app.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/prettify.css"></head>
 
-<body>
+<body class="inline-script-uid-0">
+    <link load="/components/app.html" class="inline-script-uid-1">
+    <div id="fade" style="opacity: 1; transition: opacity 200ms linear;" class="inline-script-uid-2">
+        <div load="/components/header.html" title="Inline-script.js" buttonhref="/Install" class="inline-script-uid-3"></div>
+        <div load="/Showcase/Showcase.html" class="inline-script-uid-4"><div class="inline-script-uid-10">
+    <title class="inline-script-uid-11">Inline Script - Showcase</title>
+</div></div>
+        <div load="/components/footer.html" class="inline-script-uid-5"><div class="inline-script-uid-12">
+    <footer class="inline-script-uid-13"></footer>
+
+    <style class="inline-script-uid-14">
+        footer {
+            position: absolute;
+            z-index: 10;
+            
+            width: 100%;
+            height: 500px;
+
+            margin-top: 200px;
+
+            background: #444;
+        }
+    </style>
+</div></div>
+    </div>
+
+    <script src="/scripts/fade.js" class="inline-script-uid-6"></script>
+    <script class="inline-script-uid-7">
+        setTimeout(() => {
+            fadeIn()
+        }, 1000)
+
+        inlineScript()
+
+        fadeIn()
+    </script>
+
+<script>document.body.innerHTML = `
+    <link load="/components/app.html">
     <div id="fade">
         <div load="/components/header.html" title="{{productName}}" buttonhref="/Install"></div>
         <div load="/Showcase/Showcase.html"></div>
         <div load="/components/footer.html"></div>
     </div>
+
     
-    <script src="/scripts/fade.js"></script>
-    <script>
-        setTimeout(() => {
-            fadeIn()
-        }, 1000)
+    
 
-        if (false !== false) {
-            compileInlineScript()
-        }
-
-        fadeIn()
-    </script>
-
-</body>
+`</script></body>

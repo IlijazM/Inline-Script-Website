@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- Code prettifier -->
-    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    
 
     <!-- Inline script -->
     <script src="https://ilijazm.github.io/Inline-Script/inline-script.js"></script>
@@ -24,26 +24,232 @@
         const localPath = '/Documentation/Macros'
     </script>
     <script src="/scripts/app.js"></script>
-</head>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/prettify.css"><script src="https://static.codepen.io/assets/embed/ei.js" async=""></script></head>
 
-<body>
+<body class="inline-script-uid-0">
+    <link load="/components/app.html" class="inline-script-uid-1">
+    <div id="fade" style="opacity: 1; transition: opacity 200ms linear;" class="inline-script-uid-2">
+        <div load="/components/header.html" title="Inline-script.js" buttonhref="/Install" class="inline-script-uid-3"><div class="inline-script-uid-8 scoped-css-id-0">
+    <div class="outer inline-script-uid-9">
+        <header class="wrapper inline-script-uid-10">
+            <div class="flex inline-script-uid-11"><h3 class="inline-script-uid-12 has-inline-script">Inline-script.js</h3></div>
+            <a href="https://github.com/IlijazM/Inline-Script " target="_blank" class="flex right icon inline-script-uid-13">
+                <i class="fa fa-github fa-lg inline-script-uid-14"></i>
+            </a>
+        </header>
+    
+        <nav class="wrapper inline-script-uid-15">
+            <div class="flex left inline-script-uid-16 has-inline-script"><div class="inline-script-uid-17 has-inline-script" to="/">
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = '/' }, 200)" style="cursor:pointer;" class="inline-script-uid-57 has-inline-script">Home</a>
+    </div><div class="inline-script-uid-18 has-inline-script" to="/Showcase">
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = '/Showcase' }, 200)" style="cursor:pointer;" class="inline-script-uid-58 has-inline-script">Showcase</a>
+    </div><div class="inline-script-uid-19 has-inline-script" to="/Documentation">
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = '/Documentation' }, 200)" style="cursor:pointer;" class="inline-script-uid-59 has-inline-script">Documentation</a>
+    </div></div>
+            <div class="flex right inline-script-uid-20">
+                <div class="button primary inline-script-uid-21" to="/Install">
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = '/Install' }, 200)" style="cursor:pointer;" class="inline-script-uid-60 has-inline-script">Install</a>
+    </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="distance inline-script-uid-22"></div>
+
+    <style class="inline-script-uid-23">
+.scoped-css-id-0 .outer {
+            position: fixed;
+            width: 100%;
+            z-index: 10;
+        }
+
+.scoped-css-id-0 .distance {
+            height: 110px;
+        }
+
+.scoped-css-id-0 header {
+            display: flex;
+            align-items: center;
+
+            height: 40px;
+
+            background: #222;
+            color: #ddd;
+        }
+
+.scoped-css-id-0 nav {
+            display: flex;
+            align-items: center;
+
+            height: 70px;
+
+            background: #e0e0e0;
+        }
+
+.scoped-css-id-0 a {
+            color: white;
+
+            text-decoration: none;
+        }
+
+.scoped-css-id-0 nav .left a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 100%;
+            padding: 0 20px;
+
+            color: rgba(0, 0, 0, 0.4);
+            transition: color 200ms linear;
+        }
+
+.scoped-css-id-0 nav .left a.current {
+            color: black;
+        }
+
+.scoped-css-id-0 nav .left a:hover {
+            color: black;
+        }
+
+.scoped-css-id-0 .flex {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+.scoped-css-id-0 .right {
+            margin-left: auto;
+        }
+
+.scoped-css-id-0 .icon {
+            color: white;
+            transition: color 200ms linear;
+        }
+
+.scoped-css-id-0 .icon:hover {
+            color: #aaa;
+        }</style>
+</div></div>
+        <div load="/Documentation/Macros/Macros.html" class="inline-script-uid-4"><div class="inline-script-uid-26">
+    <title class="inline-script-uid-27">Inline Script - Macros</title>
+
+    <div load="/components/learn.html" class="inline-script-uid-28">
+        <h1 class="inline-script-uid-29">Macros</h1>
+
+        <h2 class="inline-script-uid-30">Basics</h2>
+
+        <p class="inline-script-uid-31">
+            Macros are a great way to design custom elements.
+            You simply define a macro by using the tag <var class="inline-script-uid-32">define</var>.
+            The following attribute will set the <var class="inline-script-uid-33">tag</var> of the macro and the <var class="inline-script-uid-34">innerHTML</var> will set the replacement value.
+            For example we can define the tag <var class="inline-script-uid-35">six-times</var> like this
+        </p>
+<!--?prettify lang=html-->
+<pre class="prettyprint inline-script-uid-36">&lt;define six-times&gt;
+    &lt;h1&gt;Hello, world&lt;/h1&gt;
+    &lt;h2&gt;Hello, world&lt;/h2&gt;
+    &lt;h3&gt;Hello, world&lt;/h3&gt;
+    &lt;h4&gt;Hello, world&lt;/h4&gt;
+    &lt;h5&gt;Hello, world&lt;/h5&gt;
+    &lt;h6&gt;Hello, world&lt;/h6&gt;
+&lt;/define&gt;</pre>
+
+        <p class="inline-script-uid-37">
+            and now whenever we're using the tag six-times
+        </p>
+
+<!--?prettify lang=html-->
+<pre class="prettyprint inline-script-uid-38">&lt;six-times&gt;&lt;/six-times&gt;</pre>
+
+        <p class="inline-script-uid-39">it will get replaced with:</p>
+
+<!--?prettify lang=html-->
+<pre class="prettyprint inline-script-uid-40">&lt;div&gt;
+    &lt;h1&gt;Hello, world&lt;/h1&gt;
+    &lt;h2&gt;Hello, world&lt;/h2&gt;
+    &lt;h3&gt;Hello, world&lt;/h3&gt;
+    &lt;h4&gt;Hello, world&lt;/h4&gt;
+    &lt;h5&gt;Hello, world&lt;/h5&gt;
+    &lt;h6&gt;Hello, world&lt;/h6&gt;
+&lt;/div&gt;</pre>
+
+        <h3 class="inline-script-uid-41">Take a look</h3>
+        <p class="codepen inline-script-uid-42" data-theme-id="dark" data-default-tab="result,html" data-slug-hash="poyZJzX"></p>
+        <script async="" src="https://static.codepen.io/assets/embed/ei.js" class="inline-script-uid-43"></script>
+
+        <h3 class="inline-script-uid-44">Arguments</h3>
+
+        <p class="inline-script-uid-45">
+            You can use arguments in the same way as the attribute <var class="inline-script-uid-46">load</var>:
+        </p>
+
+<!--?prettify lang=html-->
+<pre class="prettyprint inline-script-uid-47">&lt;define margin&gt;
+    &lt;p style="margin: {{margin}}px;"&gt;{ html }&lt;/p&gt;
+&lt;/define&gt;
+
+&lt;margin margin=20&gt;
+    &lt;p&gt;Hello&lt;/p&gt;
+&lt;/margin&gt;</pre>
+
+        <h2 class="inline-script-uid-48">Practical uses</h2>
+
+        <p class="inline-script-uid-49">
+            A good example on how to use this syntax is to create e.g. a <var class="inline-script-uid-50">flex</var>-tag
+            since there is no proper <var class="inline-script-uid-51">flex</var>-tag in pure html already.
+        </p>
+
+        <p class="inline-script-uid-52">
+            Simply use the syntax already described:
+        </p>
+
+<!--?prettify lang=html-->
+<pre class="prettyprint inline-script-uid-53">&lt;define flex&gt;
+    &lt;div style="display:flex;"&gt;{ html }&lt;/div&gt;
+&lt;/define&gt;</pre>
+
+    </div>
+</div></div>
+        <div load="/components/footer.html" class="inline-script-uid-5"><div class="inline-script-uid-54">
+    <footer class="inline-script-uid-55"></footer>
+
+    <style class="inline-script-uid-56">
+        footer {
+            position: absolute;
+            z-index: 10;
+            
+            width: 100%;
+            height: 500px;
+
+            margin-top: 200px;
+
+            background: #444;
+        }
+    </style>
+</div></div>
+    </div>
+
+    <script src="/scripts/fade.js" class="inline-script-uid-6"></script>
+    <script class="inline-script-uid-7">
+        setTimeout(() => {
+            fadeIn()
+        }, 1000)
+
+        inlineScript()
+
+        fadeIn()
+    </script>
+
+<script>document.body.innerHTML = `
+    <link load="/components/app.html">
     <div id="fade">
         <div load="/components/header.html" title="{{productName}}" buttonhref="/Install"></div>
         <div load="/Documentation/Macros/Macros.html"></div>
         <div load="/components/footer.html"></div>
     </div>
+
     
-    <script src="/scripts/fade.js"></script>
-    <script>
-        setTimeout(() => {
-            fadeIn()
-        }, 1000)
+    
 
-        if (false !== false) {
-            compileInlineScript()
-        }
-
-        fadeIn()
-    </script>
-
-</body>
+`</script></body>

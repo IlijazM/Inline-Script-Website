@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- Code prettifier -->
-    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    
 
     <!-- Inline script -->
     <script src="https://ilijazm.github.io/Inline-Script/inline-script.js"></script>
@@ -24,26 +24,129 @@
         const localPath = '/Documentation/HTML-Syntax'
     </script>
     <script src="/scripts/app.js"></script>
-</head>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/prettify.css"></head>
 
-<body>
+<body class="inline-script-uid-0">
+    <link load="/components/app.html" class="inline-script-uid-1">
+    <div id="fade" style="opacity: 1; transition: opacity 200ms linear;" class="inline-script-uid-2">
+        <div load="/components/header.html" title="Inline-script.js" buttonhref="/Install" class="inline-script-uid-3"><div class="inline-script-uid-8 scoped-css-id-0">
+    <div class="outer inline-script-uid-9">
+        <header class="wrapper inline-script-uid-10">
+            <div class="flex inline-script-uid-11"><h3 class="inline-script-uid-12 has-inline-script">Inline-script.js</h3></div>
+            <a href="https://github.com/IlijazM/Inline-Script " target="_blank" class="flex right icon inline-script-uid-13">
+                <i class="fa fa-github fa-lg inline-script-uid-14"></i>
+            </a>
+        </header>
+    
+        <nav class="wrapper inline-script-uid-15">
+            <div class="flex left inline-script-uid-16 has-inline-script"><href class=" inline-script-uid-17 has-inline-script" to="/">Home</href><href class=" inline-script-uid-18 has-inline-script" to="/Showcase">Showcase</href><href class=" inline-script-uid-19 has-inline-script" to="/Documentation">Documentation</href></div>
+            <div class="flex right inline-script-uid-20">
+                <href class="button primary inline-script-uid-21" to="/Install">Install</href>
+            </div>
+        </nav>
+    </div>
+
+    <div class="distance inline-script-uid-22"></div>
+
+    <style class="inline-script-uid-23">
+.scoped-css-id-0 .outer {
+            position: fixed;
+            width: 100%;
+            z-index: 10;
+        }
+
+.scoped-css-id-0 .distance {
+            height: 110px;
+        }
+
+.scoped-css-id-0 header {
+            display: flex;
+            align-items: center;
+
+            height: 40px;
+
+            background: #222;
+            color: #ddd;
+        }
+
+.scoped-css-id-0 nav {
+            display: flex;
+            align-items: center;
+
+            height: 70px;
+
+            background: #e0e0e0;
+        }
+
+.scoped-css-id-0 a {
+            color: white;
+
+            text-decoration: none;
+        }
+
+.scoped-css-id-0 nav .left a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 100%;
+            padding: 0 20px;
+
+            color: rgba(0, 0, 0, 0.4);
+            transition: color 200ms linear;
+        }
+
+.scoped-css-id-0 nav .left a.current {
+            color: black;
+        }
+
+.scoped-css-id-0 nav .left a:hover {
+            color: black;
+        }
+
+.scoped-css-id-0 .flex {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+.scoped-css-id-0 .right {
+            margin-left: auto;
+        }
+
+.scoped-css-id-0 .icon {
+            color: white;
+            transition: color 200ms linear;
+        }
+
+.scoped-css-id-0 .icon:hover {
+            color: #aaa;
+        }</style>
+</div></div>
+        <div load="/Documentation/HTML-Syntax/HTML Syntax.html" class="inline-script-uid-4"></div>
+        <div load="/components/footer.html" class="inline-script-uid-5"></div>
+    </div>
+
+    <script src="/scripts/fade.js" class="inline-script-uid-6"></script>
+    <script class="inline-script-uid-7">
+        setTimeout(() => {
+            fadeIn()
+        }, 1000)
+
+        inlineScript()
+
+        fadeIn()
+    </script>
+
+<script>document.body.innerHTML = `
+    <link load="/components/app.html">
     <div id="fade">
         <div load="/components/header.html" title="{{productName}}" buttonhref="/Install"></div>
         <div load="/Documentation/HTML-Syntax/HTML Syntax.html"></div>
         <div load="/components/footer.html"></div>
     </div>
+
     
-    <script src="/scripts/fade.js"></script>
-    <script>
-        setTimeout(() => {
-            fadeIn()
-        }, 1000)
+    
 
-        if (false !== false) {
-            compileInlineScript()
-        }
-
-        fadeIn()
-    </script>
-
-</body>
+`</script></body>

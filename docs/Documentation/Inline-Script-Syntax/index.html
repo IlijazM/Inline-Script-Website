@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- Code prettifier -->
-    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    
 
     <!-- Inline script -->
     <script src="https://ilijazm.github.io/Inline-Script/inline-script.js"></script>
@@ -24,26 +24,138 @@
         const localPath = '/Documentation/Inline-Script-Syntax'
     </script>
     <script src="/scripts/app.js"></script>
-</head>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/prettify.css"><script src="https://static.codepen.io/assets/embed/ei.js" async=""></script></head>
 
-<body>
+<body class="inline-script-uid-0">
+    <link load="/components/app.html" class="inline-script-uid-1">
+    <div id="fade" style="opacity: 1; transition: opacity 200ms linear;" class="inline-script-uid-2">
+        <div load="/components/header.html" title="Inline-script.js" buttonhref="/Install" class="inline-script-uid-3"></div>
+        <div load="/Documentation/Inline-Script-Syntax/Inline Script Syntax.html" class="inline-script-uid-4"><div class="inline-script-uid-8">
+    <title class="inline-script-uid-9">Inline Script - Inline Script Syntax</title>
+
+    <div load="/components/learn.html" class="inline-script-uid-10">
+        <h1 class="inline-script-uid-11">The inline script syntax</h1>
+        <h2 class="inline-script-uid-12">Basics</h2>
+        <p class="inline-script-uid-13">
+            The inline script syntax is the core of the front-end framework. It feels similarly like the syntax in react-js.
+        </p>
+
+        <p class="inline-script-uid-14">
+            Let's say you want to randomize the content of a div. The typically way to approach this is by adding an empty div that will later be filled with content and whenever a button got pressed, a function will get called.
+        </p>
+
+
+<!--?prettify lang=html-->
+<pre class="prettyprint inline-script-uid-15">&lt;body&gt;
+    &lt;div id="random"&gt;&lt;/div&gt;
+
+    &lt;button onclick="pressed()"&gt;CLICK ME&lt;/button&gt;
+
+    &lt;script&gt;
+        const list = ['🧁', '🍫', '🍬', '🍭', '🍡'];
+
+        function setContent() {
+            document.querySelector('#random').innerHTML = list[Math.floor(Math.random() * 5)];
+        }
+
+        function pressed() {
+            setContent();
+        }
+
+        setContent();
+    &lt;/script&gt;
+&lt;/body&gt;</pre>
+
+        <p class="inline-script-uid-16">
+            As you can see, the actual code that describes the functionality of the <var class="inline-script-uid-17">div</var> can sometimes be very far away.
+            <b class="inline-script-uid-18 has-inline-script">Inline-script.js</b> has a solution for this.
+            If you start the content of the <var class="inline-script-uid-19">div</var> with a <var class="inline-script-uid-20 has-inline-script">{</var> (or <var class="inline-script-uid-21 has-inline-script">{{</var> for syntax highlighting) you use the <b class="inline-script-uid-22">inline script syntax</b>.
+            This script will automatically get executed and the resulting value will be the content of the <var class="inline-script-uid-23">div</var>
+        </p>
+        
+<!--?prettify lang=html-->
+<pre class="prettyprint inline-script-uid-24">&lt;body&gt;
+    &lt;div&gt;{{
+        ['🧁', '🍫', '🍬', '🍭', '🍡'][Math.floor(Math.random() * 5)];
+    }}&lt;/div&gt;
+&lt;/body&gt;</pre>
+
+        <p class="inline-script-uid-25">Using this syntax your html element are visually connected with the appropriate code which improves the structure of your html.</p>
+
+        <h3 class="inline-script-uid-26">Take a look</h3>
+        <p class="codepen inline-script-uid-27" data-theme-id="dark" data-default-tab="result,html" data-slug-hash="GRZBgME"></p>
+        <script async="" src="https://static.codepen.io/assets/embed/ei.js" class="inline-script-uid-28"></script>
+
+        <h2 class="inline-script-uid-29">Further use cases</h2>
+        <p class="inline-script-uid-30">This could be very useful for displaying constant values like the company name:</p>
+
+<!--?prettify lang=html-->
+<pre class="prettyprint inline-script-uid-31">&lt;body&gt;
+    &lt;div&gt;{{companyName}}&lt;/div&gt;
+
+    &lt;script&gt;
+        const companyName = 'My company';
+    &lt;/script&gt;
+&lt;/body&gt;</pre>
+
+        <h2 class="inline-script-uid-32">Restrictions</h2>
+        <p class="inline-script-uid-33">
+            As with all good things this one also has some limits.
+            You <b class="inline-script-uid-34">may not</b> use the template literals syntax ( <var class="inline-script-uid-35">`</var> ) in your code.
+        </p>
+        <p class="inline-script-uid-36">
+            It could also be the case that the page takes too long to render and hence your page reveals
+            the initial inline script code.
+            To bypass that you can set the display of the body to <var class="inline-script-uid-37">none</var> by default and 
+            after you executed the function <var class="inline-script-uid-38">inlineScript</var> you reveal the body.
+        </p>
+
+<!--?prettify lang=javascript-->
+<pre class="prettyprint inline-script-uid-39">inlineScript();
+document.body.style.display = 'block';</pre>
+
+
+    </div>
+</div></div>
+        <div load="/components/footer.html" class="inline-script-uid-5"><div class="inline-script-uid-40">
+    <footer class="inline-script-uid-41"></footer>
+
+    <style class="inline-script-uid-42">
+        footer {
+            position: absolute;
+            z-index: 10;
+            
+            width: 100%;
+            height: 500px;
+
+            margin-top: 200px;
+
+            background: #444;
+        }
+    </style>
+</div></div>
+    </div>
+
+    <script src="/scripts/fade.js" class="inline-script-uid-6"></script>
+    <script class="inline-script-uid-7">
+        setTimeout(() => {
+            fadeIn()
+        }, 1000)
+
+        inlineScript()
+
+        fadeIn()
+    </script>
+
+<script>document.body.innerHTML = `
+    <link load="/components/app.html">
     <div id="fade">
         <div load="/components/header.html" title="{{productName}}" buttonhref="/Install"></div>
         <div load="/Documentation/Inline-Script-Syntax/Inline Script Syntax.html"></div>
         <div load="/components/footer.html"></div>
     </div>
+
     
-    <script src="/scripts/fade.js"></script>
-    <script>
-        setTimeout(() => {
-            fadeIn()
-        }, 1000)
+    
 
-        if (false !== false) {
-            compileInlineScript()
-        }
-
-        fadeIn()
-    </script>
-
-</body>
+`</script></body>

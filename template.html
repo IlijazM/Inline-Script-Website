@@ -29,21 +29,20 @@
 </head>
 
 <body>
+    <link load="$globalPath/components/app.html">
     <div id="fade">
         <div load="$globalPath/components/header.html" title={{productName}} buttonhref="$globalPath/Install"></div>
         <div load="$body"></div>
         <div load="$globalPath/components/footer.html"></div>
     </div>
-    
+
     <script src="$globalPath/scripts/fade.js"></script>
     <script>
         setTimeout(() => {
             fadeIn()
         }, 1000)
 
-        if ($compile !== false) {
-            compileInlineScript()
-        }
+        inlineScript()
 
         fadeIn()
     </script>

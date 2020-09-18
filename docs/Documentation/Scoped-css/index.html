@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- Code prettifier -->
-    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    
 
     <!-- Inline script -->
     <script src="https://ilijazm.github.io/Inline-Script/inline-script.js"></script>
@@ -24,26 +24,233 @@
         const localPath = '/Documentation/Scoped-css'
     </script>
     <script src="/scripts/app.js"></script>
-</head>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/prettify.css"><script src="https://static.codepen.io/assets/embed/ei.js" async=""></script></head>
 
-<body>
+<body class="inline-script-uid-0">
+    <link load="/components/app.html" class="inline-script-uid-1">
+    <div id="fade" style="opacity: 1; transition: opacity 200ms linear;" class="inline-script-uid-2">
+        <div load="/components/header.html" title="Inline-script.js" buttonhref="/Install" class="inline-script-uid-3"><div class="inline-script-uid-46 scoped-css-id-0">
+    <div class="outer inline-script-uid-47">
+        <header class="wrapper inline-script-uid-48">
+            <div class="flex inline-script-uid-49"><h3 class="inline-script-uid-50 has-inline-script">Inline-script.js</h3></div>
+            <a href="https://github.com/IlijazM/Inline-Script " target="_blank" class="flex right icon inline-script-uid-51">
+                <i class="fa fa-github fa-lg inline-script-uid-52"></i>
+            </a>
+        </header>
+    
+        <nav class="wrapper inline-script-uid-53">
+            <div class="flex left inline-script-uid-54 has-inline-script"><div class="inline-script-uid-55 has-inline-script" to="/">
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = '/' }, 200)" style="cursor:pointer;" class="inline-script-uid-62 has-inline-script">Home</a>
+    </div><div class="inline-script-uid-56 has-inline-script" to="/Showcase">
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = '/Showcase' }, 200)" style="cursor:pointer;" class="inline-script-uid-63 has-inline-script">Showcase</a>
+    </div><div class="inline-script-uid-57 has-inline-script" to="/Documentation">
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = '/Documentation' }, 200)" style="cursor:pointer;" class="inline-script-uid-64 has-inline-script">Documentation</a>
+    </div></div>
+            <div class="flex right inline-script-uid-58">
+                <div class="button primary inline-script-uid-59" to="/Install">
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = '/Install' }, 200)" style="cursor:pointer;" class="inline-script-uid-65 has-inline-script">Install</a>
+    </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="distance inline-script-uid-60"></div>
+
+    <style class="inline-script-uid-61">
+.scoped-css-id-0 .outer {
+            position: fixed;
+            width: 100%;
+            z-index: 10;
+        }
+
+.scoped-css-id-0 .distance {
+            height: 110px;
+        }
+
+.scoped-css-id-0 header {
+            display: flex;
+            align-items: center;
+
+            height: 40px;
+
+            background: #222;
+            color: #ddd;
+        }
+
+.scoped-css-id-0 nav {
+            display: flex;
+            align-items: center;
+
+            height: 70px;
+
+            background: #e0e0e0;
+        }
+
+.scoped-css-id-0 a {
+            color: white;
+
+            text-decoration: none;
+        }
+
+.scoped-css-id-0 nav .left a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 100%;
+            padding: 0 20px;
+
+            color: rgba(0, 0, 0, 0.4);
+            transition: color 200ms linear;
+        }
+
+.scoped-css-id-0 nav .left a.current {
+            color: black;
+        }
+
+.scoped-css-id-0 nav .left a:hover {
+            color: black;
+        }
+
+.scoped-css-id-0 .flex {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+.scoped-css-id-0 .right {
+            margin-left: auto;
+        }
+
+.scoped-css-id-0 .icon {
+            color: white;
+            transition: color 200ms linear;
+        }
+
+.scoped-css-id-0 .icon:hover {
+            color: #aaa;
+        }</style>
+</div></div>
+        <div load="/Documentation/Scoped-css/Scoped CSS.html" class="inline-script-uid-4"><div class="inline-script-uid-10">
+    <title class="inline-script-uid-11">Inline Script - Scoped CSS</title>
+
+    <div load="/components/learn.html" class="inline-script-uid-12">
+        <h1 class="inline-script-uid-13">Scope CSS</h1>
+
+        <h2 class="inline-script-uid-14">Basics</h2>
+
+        <p class="inline-script-uid-15">
+            <b class="inline-script-uid-16">Scoped css</b> is an important feature if you'd like to put your elements into components.
+            Luckily, <b class="inline-script-uid-17 has-inline-script">Inline-script.js</b> will automatically scope your styles.
+            <b class="inline-script-uid-18">Scoped css</b> is not a thing in regular html anymore because of the lack of browser support, however,
+            if you would to apply the scope using <b class="inline-script-uid-19">javascript</b> this now becomes a possible feature
+            that you can use in html.
+        </p>
+
+        <p class="inline-script-uid-20">
+            The <b class="inline-script-uid-21">scoped css</b> in <b class="inline-script-uid-22 has-inline-script">Inline-script.js</b> works the same as in
+            <a href="https://github.com/IlijazM/scoped-css-js" target="_blank" class="inline-script-uid-23">scoped-css-js</a>
+            so to see further documentation you can follow the link.
+        </p>
+
+        <p class="inline-script-uid-24">
+            All you have to know is that you can put the attribute <var class="inline-script-uid-25">scoped</var> to your <var class="inline-script-uid-26">style</var>-tag
+            and <b class="inline-script-uid-27 has-inline-script">Inline-script.js</b> will automatically scope the css.
+        </p>
+
+<!--?prettify lang=html-->
+<pre class="prettyprint inline-script-uid-28">&lt;body&gt;
+    &lt;div&gt;
+        &lt;h1&gt;This is big&lt;/h1&gt;
+        &lt;style scoped&gt;
+            h1 {
+                font-weight: 800;
+                font-size: 6em;
+            }
+        &lt;/style&gt;
+    &lt;/div&gt;
+
+    &lt;h1&gt;This isn't&lt;/h1&gt;
+&lt;/body&gt;</pre>
+
+        <h2 class="inline-script-uid-29">The selector '#this'</h2>
+
+        <p class="inline-script-uid-30">
+            Let's say you want to select the outer element (in this example the <var class="inline-script-uid-31">header</var>).
+            To accomplish that you can use the selector <var class="inline-script-uid-32">#this</var>:
+        </p>
+
+<!--?prettify lang=html-->
+<pre class="prettyprint inline-script-uid-33">&lt;header&gt;
+    &lt;p&gt;Hello, world!&lt;/p&gt;
+    &lt;style scoped&gt;
+        #this {
+            background: black;
+            color: white;
+        }
+    &lt;/style&gt;
+&lt;/header&gt;</pre>
+
+        <h3 class="inline-script-uid-34">Take a look</h3>
+        <p class="codepen inline-script-uid-35" data-theme-id="dark" data-default-tab="result,html" data-slug-hash="yLOqGXq"></p>
+        <script async="" src="https://static.codepen.io/assets/embed/ei.js" class="inline-script-uid-36"></script>
+
+        <h2 class="inline-script-uid-37">The attribute scope</h2>
+
+        <p class="inline-script-uid-38">
+            You alternatively can use the attribute <var class="inline-script-uid-39">scope</var> to set the scope manually.
+            For example you want to select every <var class="inline-script-uid-40">a</var>-tag thats inside a <var class="inline-script-uid-41">li</var>-tag.
+        </p>
+
+<!--?prettify lang=html-->
+<pre class="prettyprint inline-script-uid-42">&lt;style scope="li a"&gt;
+    #this {
+        color: black;
+    }
+&lt;/style&gt;</pre>
+
+
+    </div>
+</div></div>
+        <div load="/components/footer.html" class="inline-script-uid-5"><div class="inline-script-uid-43">
+    <footer class="inline-script-uid-44"></footer>
+
+    <style class="inline-script-uid-45">
+        footer {
+            position: absolute;
+            z-index: 10;
+            
+            width: 100%;
+            height: 500px;
+
+            margin-top: 200px;
+
+            background: #444;
+        }
+    </style>
+</div></div>
+    </div>
+
+    <script src="/scripts/fade.js" class="inline-script-uid-6"></script>
+    <script class="inline-script-uid-7">
+        setTimeout(() => {
+            fadeIn()
+        }, 1000)
+
+        inlineScript()
+
+        fadeIn()
+    </script>
+
+<script>document.body.innerHTML = `
+    <link load="/components/app.html">
     <div id="fade">
         <div load="/components/header.html" title="{{productName}}" buttonhref="/Install"></div>
         <div load="/Documentation/Scoped-css/Scoped CSS.html"></div>
         <div load="/components/footer.html"></div>
     </div>
+
     
-    <script src="/scripts/fade.js"></script>
-    <script>
-        setTimeout(() => {
-            fadeIn()
-        }, 1000)
+    
 
-        if (false !== false) {
-            compileInlineScript()
-        }
-
-        fadeIn()
-    </script>
-
-</body>
+`</script></body>
