@@ -13,30 +13,134 @@
     
 
     <!-- Inline script -->
-    <script src="https://ilijazm.github.io/Inline-Script/inline-script.js"></script>
+    <script src="/scripts/inline-script.js"></script>
 
-    <!-- Burning brackets -->
-    <script src="https://ilijazm.github.io/burning-brackets-js/burning-brackets.min.js"></script>
-
-    <!-- Scripts -->
+    <!-- Script -->
     <script>
         const globalPath = ''
         const localPath = '/Showcase'
     </script>
-    <script src="/scripts/app.js"></script>
+    <script src="/scripts/app.js" defer=""></script>
+    <script src="/scripts/fade.js" defer=""></script>
+
+    <!-- Burning brackets -->
+    <script src="https://ilijazm.github.io/burning-brackets-js/burning-brackets.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/prettify.css"></head>
 
-<body class="inline-script-uid-0">
+<body class="inline-script-uid-0" finished-compiling="true">
     <link load="/components/app.html" class="inline-script-uid-1">
     <div id="fade" style="opacity: 1; transition: opacity 200ms linear;" class="inline-script-uid-2">
-        <div load="/components/header.html" title="Inline-script.js" buttonhref="/Install" class="inline-script-uid-3"></div>
-        <div load="/Showcase/Showcase.html" class="inline-script-uid-4"><div class="inline-script-uid-10">
-    <title class="inline-script-uid-11">Inline Script - Showcase</title>
-</div></div>
-        <div load="/components/footer.html" class="inline-script-uid-5"><div class="inline-script-uid-12">
-    <footer class="inline-script-uid-13"></footer>
+        <div load="/components/header.html" title="Inline-script.js" buttonhref="/Install" class="inline-script-uid-3"><div class="inline-script-uid-7 scoped-css-id-0">
+    <div class="outer inline-script-uid-8">
+        <header class="wrapper inline-script-uid-9">
+            <div class="flex inline-script-uid-10"><h3 class="inline-script-uid-11 has-inline-script">Inline-script.js</h3></div>
+            <a href="https://github.com/IlijazM/Inline-Script " target="_blank" class="flex right icon inline-script-uid-12">
+                <i class="fa fa-github fa-lg inline-script-uid-13"></i>
+            </a>
+        </header>
+    
+        <nav class="wrapper inline-script-uid-14">
+            <div class="flex left inline-script-uid-15 has-inline-script"><div class="inline-script-uid-16 has-inline-script" to="/">
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = '/' }, 250)" style="cursor:pointer;" class="inline-script-uid-23 has-inline-script">Home</a>
+    </div><div class="inline-script-uid-17 has-inline-script" to="/Showcase">
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = '/Showcase' }, 250)" style="cursor:pointer;" class="inline-script-uid-24 has-inline-script">Showcase</a>
+    </div><div class="inline-script-uid-18 has-inline-script" to="/Documentation">
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = '/Documentation' }, 250)" style="cursor:pointer;" class="inline-script-uid-25 has-inline-script">Documentation</a>
+    </div></div>
+            <div class="flex right inline-script-uid-19">
+                <div class="button primary inline-script-uid-20" to="/Install">
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = '/Install' }, 250)" style="cursor:pointer;" class="inline-script-uid-26 has-inline-script">Install</a>
+    </div>
+            </div>
+        </nav>
+    </div>
 
-    <style class="inline-script-uid-14">
+    <div class="distance inline-script-uid-21"></div>
+
+    <style class="inline-script-uid-22">
+.scoped-css-id-0 .outer {
+            position: fixed;
+            width: 100%;
+            z-index: 10;
+        }
+
+.scoped-css-id-0 .distance {
+            height: 110px;
+        }
+
+.scoped-css-id-0 header {
+            display: flex;
+            align-items: center;
+
+            height: 40px;
+
+            background: #222;
+            color: #ddd;
+        }
+
+.scoped-css-id-0 nav {
+            display: flex;
+            align-items: center;
+
+            height: 70px;
+
+            background: #e0e0e0;
+        }
+
+.scoped-css-id-0 a {
+            color: white;
+
+            text-decoration: none;
+        }
+
+.scoped-css-id-0 nav .left a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 100%;
+            padding: 0 20px;
+
+            color: rgba(0, 0, 0, 0.4);
+            transition: color 200ms linear;
+        }
+
+.scoped-css-id-0 nav .left a.current {
+            color: black;
+        }
+
+.scoped-css-id-0 nav .left a:hover {
+            color: black;
+        }
+
+.scoped-css-id-0 .flex {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+.scoped-css-id-0 .right {
+            margin-left: auto;
+        }
+
+.scoped-css-id-0 .icon {
+            color: white;
+            transition: color 200ms linear;
+        }
+
+.scoped-css-id-0 .icon:hover {
+            color: #aaa;
+        }</style>
+</div></div>
+        <div load="/Showcase/Showcase.html" class="inline-script-uid-4"><div class="inline-script-uid-27">
+    <title class="inline-script-uid-28">Inline Script - Showcase</title>
+
+    <h1 class="inline-script-uid-29">Showcase</h1>
+</div></div>
+        <div load="/components/footer.html" class="inline-script-uid-5"><div class="inline-script-uid-30">
+    <footer class="inline-script-uid-31"></footer>
+
+    <style class="inline-script-uid-32">
         footer {
             position: absolute;
             z-index: 10;
@@ -52,26 +156,82 @@
 </div></div>
     </div>
 
-    <script src="/scripts/fade.js" class="inline-script-uid-6"></script>
-    <script class="inline-script-uid-7">
-        setTimeout(() => {
-            fadeIn()
-        }, 1000)
+<script>var compiledInlineScript = true
+if (calledInlineScript === false) {
+compiledInlineScript = true
+let el
+el = document.querySelector('.inline-script-uid-3')
+el.inlineScriptAttributes = [
+{ name: 'title', value: '{{productName}}' },
+]
 
-        inlineScript()
+el = document.querySelector('.inline-script-uid-11')
+el.inlineScript = `{ title }`
 
-        fadeIn()
-    </script>
+el = document.querySelector('.inline-script-uid-16')
+el.inlineScript = `{ item.name }`
+el.inlineScriptAttributes = [
+{ name: 'class', value: '{{className}} inline-script-uid-16 has-inline-script' },
+{ name: 'to', value: '{{item.url}}' },
+]
 
-<script>document.body.innerHTML = `
-    <link load="/components/app.html">
-    <div id="fade">
-        <div load="/components/header.html" title="{{productName}}" buttonhref="/Install"></div>
-        <div load="/Showcase/Showcase.html"></div>
-        <div load="/components/footer.html"></div>
-    </div>
+el = document.querySelector('.inline-script-uid-17')
+el.inlineScript = `{ item.name }`
+el.inlineScriptAttributes = [
+{ name: 'class', value: '{{className}} inline-script-uid-17 has-inline-script' },
+{ name: 'to', value: '{{item.url}}' },
+]
 
-    
-    
+el = document.querySelector('.inline-script-uid-18')
+el.inlineScript = `{ item.name }`
+el.inlineScriptAttributes = [
+{ name: 'class', value: '{{className}} inline-script-uid-18 has-inline-script' },
+{ name: 'to', value: '{{item.url}}' },
+]
 
-`</script></body>
+el = document.querySelector('.inline-script-uid-15')
+el.inlineScript = `{{
+                navigation.map(item => {
+                    const className = document.location.pathname === item.url || document.location.pathname === item.altUrl ? 'current' : ''
+                    return eval(\`eval(eval(inlineScript).toString());inlineScript(\\\`<href class="{{className}}" to="{{item.url}}">{ item.name }</href>\\\`)\`)
+                })
+            }}`
+
+el = document.querySelector('.inline-script-uid-20')
+el.inlineScriptAttributes = [
+{ name: 'to', value: '{{buttonhref}}' },
+]
+
+el = document.querySelector('.inline-script-uid-23')
+el.inlineScript = `
+            {html}
+        `
+el.inlineScriptAttributes = [
+{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
+]
+
+el = document.querySelector('.inline-script-uid-24')
+el.inlineScript = `
+            {html}
+        `
+el.inlineScriptAttributes = [
+{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
+]
+
+el = document.querySelector('.inline-script-uid-25')
+el.inlineScript = `
+            {html}
+        `
+el.inlineScriptAttributes = [
+{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
+]
+
+el = document.querySelector('.inline-script-uid-26')
+el.inlineScript = `
+            {html}
+        `
+el.inlineScriptAttributes = [
+{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
+]
+
+}</script></body>

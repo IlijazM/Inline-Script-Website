@@ -19,3 +19,5 @@ const documentationPages = [
     { url: globalPath + '/Documentation/Macros', name: 'Macros' },
     { url: globalPath + '/Documentation/Templates', name: 'Templates' },
 ]
+
+inlineScript()

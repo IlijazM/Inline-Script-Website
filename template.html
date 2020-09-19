@@ -15,17 +15,18 @@
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 
     <!-- Inline script -->
-    <script src="https://ilijazm.github.io/Inline-Script/inline-script.js"></script>
+    <script src="$globalPath/scripts/inline-script.js"></script>
 
-    <!-- Burning brackets -->
-    <script src="https://ilijazm.github.io/burning-brackets-js/burning-brackets.min.js"></script>
-
-    <!-- Scripts -->
+    <!-- Script -->
     <script>
         const globalPath = '$globalPath'
         const localPath = '$localPath'
     </script>
-    <script src="$globalPath/scripts/app.js"></script>
+    <script src="$globalPath/scripts/app.js" defer></script>
+    <script src="$globalPath/scripts/fade.js" defer></script>
+
+    <!-- Burning brackets -->
+    <script src="https://ilijazm.github.io/burning-brackets-js/burning-brackets.min.js"></script>
 </head>
 
 <body>
@@ -35,16 +36,5 @@
         <div load="$body"></div>
         <div load="$globalPath/components/footer.html"></div>
     </div>
-
-    <script src="$globalPath/scripts/fade.js"></script>
-    <script>
-        setTimeout(() => {
-            fadeIn()
-        }, 1000)
-
-        inlineScript()
-
-        fadeIn()
-    </script>
 </body>
 </html>

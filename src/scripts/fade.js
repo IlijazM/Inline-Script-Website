@@ -1,7 +1,7 @@
 const fadeElement = document.querySelector('#fade')
 
 fadeElement.style.opacity = 0
-fadeElement.style.transition = 'opacity 200ms linear'
+
 
 function fadeIn() {
     setTimeout(() => {
@@ -12,3 +12,8 @@ function fadeIn() {
 function fadeOut() {
     fadeElement.style.opacity = 0
 }
+
+setTimeout(() => {
+    fadeElement.style.transition = 'opacity 200ms linear'
+    fadeIn()
+}, 100)

@@ -5,7 +5,7 @@ const { JSDOM } = jsdom
 
 const template_ = require('./template')
 
-module.exports = function compile(root, target, callback) {
+module.exports = async function compile(root, target, callback) {
     const port = 8080
 
     //#region Server
@@ -14,56 +14,53 @@ module.exports = function compile(root, target, callback) {
 
     app.use(express.static(root))
 
+    const server = app.listen(port, () => console.log('Started server'))
     //#endregion
 
-    fs.copySync(root, target)
-
-    console.log("copied")
-    app.listen(port, () => console.log('Started server'))
+    await fs.copy(root, target)
 
     const template = fs.readFileSync('template.html', 'utf-8')
     template_.generate(root, '', template)
 
     const routes = JSON.parse(fs.readFileSync('routes.json', 'utf-8'))
 
-    routes.forEach(route => compileRoute(root, target, route))
+    for (let route of routes) {
+        await compileRoute(target, route)
+        console.log("finished " + route.name)
+    }
 
     setTimeout(() => {
-        console.log('Stopped server')
-
-        console.log('compiled!')
         callback()
     }, 1000)
 }
 
-async function compileRoute(root, target, route) {
-    const domFile = await JSDOM.fromFile(root + route.url + '/index.html', {})
-    const documentFile = domFile.window.document
-
-    Array.from(documentFile.body.querySelectorAll('script')).forEach(script => {
-        documentFile.body.removeChild(script)
-    })
-
-    const initialBodyScript = documentFile.createElement('script')
-    initialBodyScript.innerHTML = 'document.body.innerHTML = `' + documentFile.body.innerHTML + '`'
-
-    const dom = await JSDOM.fromURL('http://localhost:8080' + route.url, {
-        resources: 'usable',
-        runScripts: 'dangerously',
-        pretendToBeVisual: true,
-    })
-
-    const document = dom.window.document
-
-    setTimeout(() => {
-        document.body.innerHTML += initialBodyScript.outerHTML
-
-        const content = document.documentElement.innerHTML
-
-        fs.writeFile(target + '/' + route.url + '/index.html', content, (err) => {
-            if (err) throw err
+async function compileRoute(target, route) {
+    return new Promise(async (resolve, reject) => {
+        const dom = await JSDOM.fromURL('http://localhost:8080' + route.url, {
+            virtualConsole: new jsdom.VirtualConsole(),
+            resources: 'usable',
+            runScripts: 'dangerously',
+            pretendToBeVisual: true,
         })
-    }, 1000)
 
-    if (route.subPaths !== undefined) route.subPaths.forEach(r => compileRoute(root, target, r))
+        const document = dom.window.document
+
+        setTimeout(async () => {
+            const content = document.documentElement.innerHTML
+
+            fs.writeFile(target + '/' + route.url + '/index.html', content, (err) => {
+                if (err) throw err
+            })
+
+            if (route.subPaths !== undefined) {
+                for (subPath of route.subPaths) {
+                    await compileRoute(target, subPath)
+                    console.log("finished " + subPath.name)
+                }
+            }
+
+
+            resolve()
+        }, 1000)
+    })
 }

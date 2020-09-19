@@ -15,27 +15,13 @@
         <div class="wrapper">{{ html }}</div>
     </define>
 
-    <define wrapped>
-        <div class="wrapped">{{ html }}</div>
+    <define inline>
+        <div style="display:inline;margin:0;">{{ html }}</div>
     </define>
 
     <define href>
-        <a
-            onclick="fadeOut();setTimeout(() => { document.location.pathname = '{{to}}' }, 200)"
-            style="cursor:pointer;">
-            {{html}}
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = '{{to}}' }, 250)" style="cursor:pointer;">
+            {html}
         </a>
     </define>
-
-    <style>
-        .wrapper {
-            padding-left: calc((100vw - 800px) / 2);
-            padding-right: calc((100vw - 800px) / 2);
-        }
-
-        .wrapped {
-            width: 800px;
-            margin: 0 50px;
-        }
-    </style>
 </div>
