@@ -7,7 +7,7 @@
     <link href="../../styles/codepretify.css" rel="stylesheet">
 
     <!-- Font awesome -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- Code prettifier -->
     
@@ -46,15 +46,15 @@
     
         <nav class="wrapper inline-script-uid-14">
             <div class="flex left inline-script-uid-15 has-inline-script"><div class="inline-script-uid-16 has-inline-script" to="Inline-Script-Website/">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/' }, 250)" style="cursor:pointer;" class="inline-script-uid-53 has-inline-script">Home</a>
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/' }, 250)" style="cursor:pointer;" class="inline-script-uid-23 has-inline-script">Home</a>
     </div><div class="inline-script-uid-17 has-inline-script" to="Inline-Script-Website/Showcase">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/Showcase' }, 250)" style="cursor:pointer;" class="inline-script-uid-54 has-inline-script">Showcase</a>
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/Showcase' }, 250)" style="cursor:pointer;" class="inline-script-uid-24 has-inline-script">Showcase</a>
     </div><div class="inline-script-uid-18 has-inline-script" to="Inline-Script-Website/Documentation">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/Documentation' }, 250)" style="cursor:pointer;" class="inline-script-uid-55 has-inline-script">Documentation</a>
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/Documentation' }, 250)" style="cursor:pointer;" class="inline-script-uid-25 has-inline-script">Documentation</a>
     </div></div>
             <div class="flex right inline-script-uid-19">
                 <div class="button primary inline-script-uid-20" to="./Install">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = './Install' }, 250)" style="cursor:pointer;" class="inline-script-uid-56 has-inline-script">Install</a>
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = './Install' }, 250)" style="cursor:pointer;" class="inline-script-uid-26 has-inline-script">Install</a>
     </div>
             </div>
         </nav>
@@ -137,10 +137,10 @@
             color: #aaa;
         }</style>
 </div></div>
-        <div load="Manipulating attributes.html" class="inline-script-uid-4"><div class="inline-script-uid-23">
-    <title class="inline-script-uid-24">Inline Script - Manipulating attributes</title>
+        <div load="Manipulating attributes.html" class="inline-script-uid-4"><div class="inline-script-uid-27">
+    <title class="inline-script-uid-28">Inline Script - Manipulating attributes</title>
 
-    <div load="../../components/learn.html" class="inline-script-uid-25"><div class="inline-script-uid-60 scoped-css-id-1">
+    <div load="../../components/learn.html" class="inline-script-uid-29"><div class="inline-script-uid-60 scoped-css-id-1">
     <div class="learn inline-script-uid-61">
         <nav class="inline-script-uid-62">
             <ul class="inline-script-uid-63 has-inline-script"><div to="Inline-Script-Website/Documentation/" class="inline-script-uid-64">
@@ -169,17 +169,17 @@
         </nav>
         <main class="inline-script-uid-97">
             <div id="content" class="inline-script-uid-98 has-inline-script">
-        <h1 class="inline-script-uid-26">Manipulating attributes</h1>
+        <h1 class="inline-script-uid-30">Manipulating attributes</h1>
 
-        <h2 class="inline-script-uid-27" id="basics">Basics</h2>
+        <h2 class="inline-script-uid-31" id="basics">Basics</h2>
 
-        <p class="inline-script-uid-28">
+        <p class="inline-script-uid-32">
             You can also use the inline script syntax in attributes.
             To do this you simply nest your inline script syntax into two curly brackets {{ ... }}.
         </p>
 
 <!--?prettify lang=html-->
-<pre class="prettyprint inline-script-uid-29 prettyprinted" style=""><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"color{{ Math.floor(Math.random() * 3) }}"</span><span class="tag">&gt;</span><span class="pln">
+<pre class="prettyprint inline-script-uid-33 prettyprinted" style=""><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"color{{ Math.floor(Math.random() * 3) }}"</span><span class="tag">&gt;</span><span class="pln">
     Random color
 </span><span class="tag">&lt;/div&gt;</span><span class="pln">
 
@@ -189,61 +189,61 @@
     </span><span class="pun">.</span><span class="pln">color2 </span><span class="pun">{</span><span class="pln"> color</span><span class="pun">:</span><span class="pln"> green</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
 </span><span class="tag">&lt;/style&gt;</span></pre>
 
-        <p class="inline-script-uid-30">
-            Now whenever the <var class="inline-script-uid-31">render</var> function is getting called,
+        <p class="inline-script-uid-34">
+            Now whenever the <var class="inline-script-uid-35">render</var> function is getting called,
             the attributes will get updates as well.
         </p>
 
-        <h2 class="inline-script-uid-32" id="restrictions">Restrictions</h2>
+        <h2 class="inline-script-uid-36" id="restrictions">Restrictions</h2>
 
-        <p class="inline-script-uid-33">
+        <p class="inline-script-uid-37">
             Keep in mind that syntaxes like
         </p>
 
 <!--?prettify lang=html-->
-<pre class="prettyprint inline-script-uid-34 prettyprinted" style=""><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">{{item</span><span class="pln"> </span><span class="atv">=</span><span class="pun">=</span><span class="pln"> </span><span class="atn">currentItem</span><span class="pln"> ? </span><span class="atv">'active'</span><span class="pln"> : </span><span class="atv">''</span><span class="pln">}}</span><span class="tag">&gt;</span><span class="pln">{{ item }}</span><span class="tag">&lt;/p&gt;</span></pre>
+<pre class="prettyprint inline-script-uid-38 prettyprinted" style=""><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">{{item</span><span class="pln"> </span><span class="atv">=</span><span class="pun">=</span><span class="pln"> </span><span class="atn">currentItem</span><span class="pln"> ? </span><span class="atv">'active'</span><span class="pln"> : </span><span class="atv">''</span><span class="pln">}}</span><span class="tag">&gt;</span><span class="pln">{{ item }}</span><span class="tag">&lt;/p&gt;</span></pre>
 
-        <p class="inline-script-uid-35">may not work simply because this could get converted to junk:</p>
+        <p class="inline-script-uid-39">may not work simply because this could get converted to junk:</p>
 
         
 <!--?prettify lang=html-->
-<pre class="prettyprint inline-script-uid-36 prettyprinted" style=""><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"{{item inline-script-uid-0 has-inline-script"</span><span class="pln"> </span><span class="atv">=</span><span class="pun">=</span><span class="atv">"currentItem"</span><span class="pln"> ?</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atv">'active'</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> :</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atv">''</span><span class="pln">}}</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">{{ item }}</span><span class="tag">&lt;/p&gt;</span></pre>
+<pre class="prettyprint inline-script-uid-40 prettyprinted" style=""><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"{{item inline-script-uid-0 has-inline-script"</span><span class="pln"> </span><span class="atv">=</span><span class="pun">=</span><span class="atv">"currentItem"</span><span class="pln"> ?</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atv">'active'</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> :</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atv">''</span><span class="pln">}}</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">{{ item }}</span><span class="tag">&lt;/p&gt;</span></pre>
 
-        <h2 class="inline-script-uid-37" id="practical-example">Practical example</h2>
+        <h2 class="inline-script-uid-41" id="practical-example">Practical example</h2>
 
-        <p class="inline-script-uid-38">
-            Let's say we want to generate a <var class="inline-script-uid-39">nav</var> based on a variable called <var class="inline-script-uid-40">navigation</var>.
+        <p class="inline-script-uid-42">
+            Let's say we want to generate a <var class="inline-script-uid-43">nav</var> based on a variable called <var class="inline-script-uid-44">navigation</var>.
             The variable looks like this:
         </p>
 
 <!--?prettify lang=javascript-->
-<pre class="prettyprint inline-script-uid-41 prettyprinted" style=""><span class="kwd">const</span><span class="pln"> navigation </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+<pre class="prettyprint inline-script-uid-45 prettyprinted" style=""><span class="kwd">const</span><span class="pln"> navigation </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
     </span><span class="str">'Home'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'About'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Pricing'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Contact'</span><span class="pln">
 </span><span class="pun">];</span></pre>
 
-        <p class="inline-script-uid-42">We also have the variable <var class="inline-script-uid-43">currentPage</var> which contains the current page we're currently on:</p>
+        <p class="inline-script-uid-46">We also have the variable <var class="inline-script-uid-47">currentPage</var> which contains the current page we're currently on:</p>
 
 <!--?prettify lang=javascript-->
-<pre class="prettyprint inline-script-uid-44 prettyprinted" style=""><span class="kwd">let</span><span class="pln"> currentPage </span><span class="pun">=</span><span class="pln"> </span><span class="str">'About'</span><span class="pun">;</span></pre>
+<pre class="prettyprint inline-script-uid-48 prettyprinted" style=""><span class="kwd">let</span><span class="pln"> currentPage </span><span class="pun">=</span><span class="pln"> </span><span class="str">'About'</span><span class="pun">;</span></pre>
 
-        <p class="inline-script-uid-45">
-            Let's loop through our array and return another array filled with <var class="inline-script-uid-46">a</var>-tags.
+        <p class="inline-script-uid-49">
+            Let's loop through our array and return another array filled with <var class="inline-script-uid-50">a</var>-tags.
             But our goal is to highlight the current page.
-            We can define a variable called <var class="inline-script-uid-47">className</var> to whether <var class="inline-script-uid-48">'current'</var> or nothing
+            We can define a variable called <var class="inline-script-uid-51">className</var> to whether <var class="inline-script-uid-52">'current'</var> or nothing
             and set this to our element:
         </p>
 
 <!--?prettify lang=html-->
-<pre class="prettyprint inline-script-uid-49 prettyprinted" style=""><span class="tag">&lt;nav&gt;</span><span class="pln">{{
+<pre class="prettyprint inline-script-uid-53 prettyprinted" style=""><span class="tag">&lt;nav&gt;</span><span class="pln">{{
     navigation.map(item =&gt; {
         const className = item === currentPage ? 'current' : '';
         return (</span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">{{className}}</span><span class="tag">&gt;</span><span class="pln">{ item }</span><span class="tag">&lt;/a&gt;</span><span class="pln">);
     })
 }}</span><span class="tag">&lt;/nav&gt;</span></pre>
 
-        <h3 class="inline-script-uid-50">Take a look</h3>
+        <h3 class="inline-script-uid-54">Take a look</h3>
         <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="300" name="cp_embed_1" scrolling="no" src="https://codepen.io/anon/embed/VwaBqYw?theme-id=dark&amp;default-tab=result%2Chtml&amp;slug-hash=VwaBqYw&amp;user=anon&amp;name=cp_embed_1" style="width: 100%; overflow:hidden; display:block;" title="CodePen Embed" loading="lazy" id="cp_embed_VwaBqYw"></iframe></div>
-        <script async="" src="https://static.codepen.io/assets/embed/ei.js" class="inline-script-uid-52"></script>
+        <script async="" src="https://static.codepen.io/assets/embed/ei.js" class="inline-script-uid-56"></script>
 
     </div>
         </main>
@@ -504,41 +504,41 @@ el.inlineScriptAttributes = [
 { name: 'to', value: '{{buttonhref}}' },
 ]
 
+el = document.querySelector('.inline-script-uid-23')
+el.inlineScript = `
+            {html}
+        `
+el.inlineScriptAttributes = [
+{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
+]
+
+el = document.querySelector('.inline-script-uid-24')
+el.inlineScript = `
+            {html}
+        `
+el.inlineScriptAttributes = [
+{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
+]
+
 el = document.querySelector('.inline-script-uid-25')
+el.inlineScript = `
+            {html}
+        `
+el.inlineScriptAttributes = [
+{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
+]
+
+el = document.querySelector('.inline-script-uid-26')
+el.inlineScript = `
+            {html}
+        `
+el.inlineScriptAttributes = [
+{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
+]
+
+el = document.querySelector('.inline-script-uid-29')
 el.inlineScriptAttributes = [
 { name: 'load', value: '{{globalPath}}/components/learn.html' },
-]
-
-el = document.querySelector('.inline-script-uid-53')
-el.inlineScript = `
-            {html}
-        `
-el.inlineScriptAttributes = [
-{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
-]
-
-el = document.querySelector('.inline-script-uid-54')
-el.inlineScript = `
-            {html}
-        `
-el.inlineScriptAttributes = [
-{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
-]
-
-el = document.querySelector('.inline-script-uid-55')
-el.inlineScript = `
-            {html}
-        `
-el.inlineScriptAttributes = [
-{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
-]
-
-el = document.querySelector('.inline-script-uid-56')
-el.inlineScript = `
-            {html}
-        `
-el.inlineScriptAttributes = [
-{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
 ]
 
 el = document.querySelector('.inline-script-uid-66')
