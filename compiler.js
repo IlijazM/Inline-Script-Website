@@ -34,6 +34,14 @@ module.exports = async function compile(root, target, callback) {
     }, 1000)
 }
 
+function sleep(time) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve()
+        }, time);
+    })
+}
+
 async function compileRoute(target, route) {
     return new Promise(async (resolve, reject) => {
         const dom = await JSDOM.fromURL('http://localhost:8080' + route.url, {
@@ -45,7 +53,12 @@ async function compileRoute(target, route) {
 
         const document = dom.window.document
 
-        setTimeout(async () => {
+        let i
+        for (i = 0; i < 200; i++) {
+            await sleep(10)
+
+            if (document.body.getAttribute('finished-compiling') === null) continue
+
             const content = document.documentElement.innerHTML
 
             fs.writeFile(target + '/' + route.url + '/index.html', content, (err) => {
@@ -61,6 +74,9 @@ async function compileRoute(target, route) {
 
 
             resolve()
-        }, 1000)
+            break
+        }
+
+        if (i === 200) reject()
     })
 }

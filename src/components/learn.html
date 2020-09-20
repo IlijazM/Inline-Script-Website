@@ -19,7 +19,7 @@
             const h2 = this.parentElement.query('#content').queryAll('h2')
 
             h2.map(el => {
-                el.id = el.html.replaceAll(' ', '-').toLowerCase()
+                el.id = el.html.replace(/\s/gm, '-').toLowerCase()
                 return (<li>{
                     this.onclick = function() {
                         window.scrollTo({top: el.y - 200})
@@ -35,7 +35,7 @@
 
         <main class="nav">{{
             const entries = Object.entries(documentationPages)
-            let index = parseInt(entries.find(v => v[1].url === localPath)[0])
+            let index = parseInt(entries.find(v => v[1].url === document.location.pathname)[0])
 
             let previousPage = entries[index - 1]
             let nextPage = entries[index + 1]
