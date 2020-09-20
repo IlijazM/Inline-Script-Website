@@ -59,7 +59,7 @@ async function compileRoute(target, route) {
 
             if (document.body.getAttribute('finished-compiling') === null) continue
 
-            const content = document.documentElement.innerHTML
+            const content = document.documentElement.outerHTML
 
             fs.writeFile(target + '/' + route.url + '/index.html', content, (err) => {
                 if (err) throw err

@@ -15,7 +15,6 @@
         </main>
 
         <div class="nav-right">{{
-            console.log(scope)
             const h2 = this.parentElement.query('#content').queryAll('h2')
 
             h2.map(el => {
@@ -35,7 +34,7 @@
 
         <main class="nav">{{
             const entries = Object.entries(documentationPages)
-            let index = parseInt(entries.find(v => v[1].url === document.location.pathname)[0])
+            let index = parseInt(entries.find(v => v[1].url.endsWith(document.location.pathname.substr(1)))[0])
 
             let previousPage = entries[index - 1]
             let nextPage = entries[index + 1]
