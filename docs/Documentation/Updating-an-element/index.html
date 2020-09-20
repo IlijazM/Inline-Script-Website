@@ -22,9 +22,9 @@
     "preUrl": "Inline-Script-Website"
 }`)
     </script>
-    <script src="../../.active/app.js"></script>
+    <script src="../../_active/app.js"></script>
     <script src="../../scripts/app.js" defer=""></script>
-    <script src="../../.active/fade.js" defer=""></script>
+    <script src="../../_active/fade.js" defer=""></script>
 
     <!-- Burning brackets -->
     <script src="https://ilijazm.github.io/burning-brackets-js/burning-brackets.min.js"></script>
@@ -46,15 +46,15 @@
     
         <nav class="wrapper inline-script-uid-14">
             <div class="flex left inline-script-uid-15 has-inline-script"><div class="inline-script-uid-16 has-inline-script" to="Inline-Script-Website/">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/' }, 250)" style="cursor:pointer;" class="inline-script-uid-44 has-inline-script">Home</a>
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/' }, 250)" style="cursor:pointer;" class="inline-script-uid-23 has-inline-script">Home</a>
     </div><div class="inline-script-uid-17 has-inline-script" to="Inline-Script-Website/Showcase">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/Showcase' }, 250)" style="cursor:pointer;" class="inline-script-uid-45 has-inline-script">Showcase</a>
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/Showcase' }, 250)" style="cursor:pointer;" class="inline-script-uid-24 has-inline-script">Showcase</a>
     </div><div class="inline-script-uid-18 has-inline-script" to="Inline-Script-Website/Documentation">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/Documentation' }, 250)" style="cursor:pointer;" class="inline-script-uid-46 has-inline-script">Documentation</a>
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/Documentation' }, 250)" style="cursor:pointer;" class="inline-script-uid-25 has-inline-script">Documentation</a>
     </div></div>
             <div class="flex right inline-script-uid-19">
                 <div class="button primary inline-script-uid-20" to="./Install">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = './Install' }, 250)" style="cursor:pointer;" class="inline-script-uid-47 has-inline-script">Install</a>
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = './Install' }, 250)" style="cursor:pointer;" class="inline-script-uid-26 has-inline-script">Install</a>
     </div>
             </div>
         </nav>
@@ -137,10 +137,10 @@
             color: #aaa;
         }</style>
 </div></div>
-        <div load="Updating an element.html" class="inline-script-uid-4"><div class="inline-script-uid-23">
-    <title class="inline-script-uid-24">Inline Script - Updating an element</title>
+        <div load="Updating an element.html" class="inline-script-uid-4"><div class="inline-script-uid-27">
+    <title class="inline-script-uid-28">Inline Script - Updating an element</title>
 
-    <div load="../../components/learn.html" class="inline-script-uid-25"><div class="inline-script-uid-48 scoped-css-id-1">
+    <div load="../../components/learn.html" class="inline-script-uid-29"><div class="inline-script-uid-48 scoped-css-id-1">
     <div class="learn inline-script-uid-49">
         <nav class="inline-script-uid-50">
             <ul class="inline-script-uid-51 has-inline-script"><div to="Inline-Script-Website/Documentation/" class="inline-script-uid-52">
@@ -169,22 +169,22 @@
         </nav>
         <main class="inline-script-uid-85">
             <div id="content" class="inline-script-uid-86 has-inline-script">
-        <h1 class="inline-script-uid-26">Updating an element</h1>
-        <h2 class="inline-script-uid-27" id="basics">Basics</h2>
-        <p class="inline-script-uid-28">
+        <h1 class="inline-script-uid-30">Updating an element</h1>
+        <h2 class="inline-script-uid-31" id="basics">Basics</h2>
+        <p class="inline-script-uid-32">
             Let's say you want to update your element whenever e.g. a button got pressed.
             This is luckily very simple.
-            You can select your element and then call the function <var class="inline-script-uid-29">render()</var> to re-render it.
+            You can select your element and then call the function <var class="inline-script-uid-33">render()</var> to re-render it.
         </p>
-        <p class="inline-script-uid-30">
-            In this example we have a <var class="inline-script-uid-31">div</var> that randomly outputs one emoji of a list.
-            We can add a <var class="inline-script-uid-32">onclick</var> attribute to it that calls the function <var class="inline-script-uid-33">update</var>.
-            Now all that's left is a way to select the element and to call the <var class="inline-script-uid-34">render</var> function.
-            We can select the element by the id <var class="inline-script-uid-35">random</var> and voila.
+        <p class="inline-script-uid-34">
+            In this example we have a <var class="inline-script-uid-35">div</var> that randomly outputs one emoji of a list.
+            We can add a <var class="inline-script-uid-36">onclick</var> attribute to it that calls the function <var class="inline-script-uid-37">update</var>.
+            Now all that's left is a way to select the element and to call the <var class="inline-script-uid-38">render</var> function.
+            We can select the element by the id <var class="inline-script-uid-39">random</var> and voila.
         </p>
         
 <!--?prettify lang=html-->
-<pre class="prettyprint inline-script-uid-36 prettyprinted" style=""><span class="tag">&lt;body&gt;</span><span class="pln">
+<pre class="prettyprint inline-script-uid-40 prettyprinted" style=""><span class="tag">&lt;body&gt;</span><span class="pln">
     </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"random"</span><span class="pln"> </span><span class="atn">onclick</span><span class="pun">=</span><span class="atv">"</span><span class="pln">update</span><span class="pun">()</span><span class="atv">"</span><span class="tag">&gt;</span><span class="pln">{{
         ['🧁', '🍫', '🍬', '🍭', '🍡'][Math.floor(Math.random() * 5)];
     }}</span><span class="tag">&lt;/div&gt;</span><span class="pln">
@@ -196,11 +196,11 @@
     </span><span class="tag">&lt;/script&gt;</span><span class="pln">
 </span><span class="tag">&lt;/body&gt;</span></pre>
 
-        <h3 class="inline-script-uid-37">Take a look</h3>
+        <h3 class="inline-script-uid-41">Take a look</h3>
         <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="300" name="cp_embed_1" scrolling="no" src="https://codepen.io/anon/embed/abNjdZg?theme-id=dark&amp;default-tab=result%2Chtml&amp;slug-hash=abNjdZg&amp;user=anon&amp;name=cp_embed_1" style="width: 100%; overflow:hidden; display:block;" title="CodePen Embed" loading="lazy" id="cp_embed_abNjdZg"></iframe></div>
-        <script async="" src="https://static.codepen.io/assets/embed/ei.js" class="inline-script-uid-39"></script>
+        <script async="" src="https://static.codepen.io/assets/embed/ei.js" class="inline-script-uid-43"></script>
 
-        <p class="inline-script-uid-40">
+        <p class="inline-script-uid-44">
             This gives you great control over how your webapp should react.
         </p>
     </div>
@@ -397,10 +397,10 @@
         }</style>
 </div></div>
 </div></div>
-        <div load="../../components/footer.html" class="inline-script-uid-5"><div class="inline-script-uid-41">
-    <footer class="inline-script-uid-42"></footer>
+        <div load="../../components/footer.html" class="inline-script-uid-5"><div class="inline-script-uid-45">
+    <footer class="inline-script-uid-46"></footer>
 
-    <style class="inline-script-uid-43">
+    <style class="inline-script-uid-47">
         footer {
             position: absolute;
             z-index: 10;
@@ -462,41 +462,41 @@ el.inlineScriptAttributes = [
 { name: 'to', value: '{{buttonhref}}' },
 ]
 
+el = document.querySelector('.inline-script-uid-23')
+el.inlineScript = `
+            {html}
+        `
+el.inlineScriptAttributes = [
+{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
+]
+
+el = document.querySelector('.inline-script-uid-24')
+el.inlineScript = `
+            {html}
+        `
+el.inlineScriptAttributes = [
+{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
+]
+
 el = document.querySelector('.inline-script-uid-25')
+el.inlineScript = `
+            {html}
+        `
+el.inlineScriptAttributes = [
+{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
+]
+
+el = document.querySelector('.inline-script-uid-26')
+el.inlineScript = `
+            {html}
+        `
+el.inlineScriptAttributes = [
+{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
+]
+
+el = document.querySelector('.inline-script-uid-29')
 el.inlineScriptAttributes = [
 { name: 'load', value: '{{globalPath}}/components/learn.html' },
-]
-
-el = document.querySelector('.inline-script-uid-44')
-el.inlineScript = `
-            {html}
-        `
-el.inlineScriptAttributes = [
-{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
-]
-
-el = document.querySelector('.inline-script-uid-45')
-el.inlineScript = `
-            {html}
-        `
-el.inlineScriptAttributes = [
-{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
-]
-
-el = document.querySelector('.inline-script-uid-46')
-el.inlineScript = `
-            {html}
-        `
-el.inlineScriptAttributes = [
-{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
-]
-
-el = document.querySelector('.inline-script-uid-47')
-el.inlineScript = `
-            {html}
-        `
-el.inlineScriptAttributes = [
-{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
 ]
 
 el = document.querySelector('.inline-script-uid-54')

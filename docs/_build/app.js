@@ -1,0 +1,1 @@
+const preUrl = props.preUrl

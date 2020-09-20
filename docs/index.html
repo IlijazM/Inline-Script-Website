@@ -22,9 +22,9 @@
     "preUrl": "Inline-Script-Website"
 }`)
     </script>
-    <script src="./.active/app.js"></script>
+    <script src="./_active/app.js"></script>
     <script src="./scripts/app.js" defer=""></script>
-    <script src="./.active/fade.js" defer=""></script>
+    <script src="./_active/fade.js" defer=""></script>
 
     <!-- Burning brackets -->
     <script src="https://ilijazm.github.io/burning-brackets-js/burning-brackets.min.js"></script>
@@ -33,34 +33,34 @@
 <body class="inline-script-uid-0" finished-compiling="true">
     <link load="./components/app.html" class="inline-script-uid-1">
     <div id="fade" class="inline-script-uid-2">
-        <div load="./components/header.html" title="Inline-script.js" buttonhref="./Install" class="inline-script-uid-3"><div class="inline-script-uid-6 scoped-css-id-0">
-    <div class="outer inline-script-uid-7">
-        <header class="wrapper inline-script-uid-8">
-            <div class="flex inline-script-uid-9"><h3 class="inline-script-uid-10 has-inline-script">Inline-script.js</h3></div>
-            <a href="https://github.com/IlijazM/Inline-Script " target="_blank" class="flex right icon inline-script-uid-11">
-                <i class="fa fa-github fa-lg inline-script-uid-12"></i>
+        <div load="./components/header.html" title="Inline-script.js" buttonhref="./Install" class="inline-script-uid-3"><div class="inline-script-uid-7 scoped-css-id-0">
+    <div class="outer inline-script-uid-8">
+        <header class="wrapper inline-script-uid-9">
+            <div class="flex inline-script-uid-10"><h3 class="inline-script-uid-11 has-inline-script">Inline-script.js</h3></div>
+            <a href="https://github.com/IlijazM/Inline-Script " target="_blank" class="flex right icon inline-script-uid-12">
+                <i class="fa fa-github fa-lg inline-script-uid-13"></i>
             </a>
         </header>
     
-        <nav class="wrapper inline-script-uid-13">
-            <div class="flex left inline-script-uid-14 has-inline-script"><div class="inline-script-uid-15 has-inline-script" to="Inline-Script-Website/">
+        <nav class="wrapper inline-script-uid-14">
+            <div class="flex left inline-script-uid-15 has-inline-script"><div class="inline-script-uid-16 has-inline-script" to="Inline-Script-Website/">
         <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/' }, 250)" style="cursor:pointer;" class="inline-script-uid-31 has-inline-script">Home</a>
-    </div><div class="inline-script-uid-16 has-inline-script" to="Inline-Script-Website/Showcase">
+    </div><div class="inline-script-uid-17 has-inline-script" to="Inline-Script-Website/Showcase">
         <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/Showcase' }, 250)" style="cursor:pointer;" class="inline-script-uid-32 has-inline-script">Showcase</a>
-    </div><div class="inline-script-uid-17 has-inline-script" to="Inline-Script-Website/Documentation">
+    </div><div class="inline-script-uid-18 has-inline-script" to="Inline-Script-Website/Documentation">
         <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/Documentation' }, 250)" style="cursor:pointer;" class="inline-script-uid-33 has-inline-script">Documentation</a>
     </div></div>
-            <div class="flex right inline-script-uid-18">
-                <div class="button primary inline-script-uid-19" to="./Install">
+            <div class="flex right inline-script-uid-19">
+                <div class="button primary inline-script-uid-20" to="./Install">
         <a onclick="fadeOut();setTimeout(() => { document.location.pathname = './Install' }, 250)" style="cursor:pointer;" class="inline-script-uid-34 has-inline-script">Install</a>
     </div>
             </div>
         </nav>
     </div>
 
-    <div class="distance inline-script-uid-20"></div>
+    <div class="distance inline-script-uid-21"></div>
 
-    <style class="inline-script-uid-21">
+    <style class="inline-script-uid-22">
 .scoped-css-id-0 .outer {
             position: fixed;
             width: 100%;
@@ -220,15 +220,8 @@ el.inlineScriptAttributes = [
 { name: 'title', value: '{{productName}}' },
 ]
 
-el = document.querySelector('.inline-script-uid-10')
+el = document.querySelector('.inline-script-uid-11')
 el.inlineScript = `{ title }`
-
-el = document.querySelector('.inline-script-uid-15')
-el.inlineScript = `{ item.name }`
-el.inlineScriptAttributes = [
-{ name: 'class', value: '{{className}} inline-script-uid-15 has-inline-script' },
-{ name: 'to', value: '{{item.url}}' },
-]
 
 el = document.querySelector('.inline-script-uid-16')
 el.inlineScript = `{ item.name }`
@@ -244,7 +237,14 @@ el.inlineScriptAttributes = [
 { name: 'to', value: '{{item.url}}' },
 ]
 
-el = document.querySelector('.inline-script-uid-14')
+el = document.querySelector('.inline-script-uid-18')
+el.inlineScript = `{ item.name }`
+el.inlineScriptAttributes = [
+{ name: 'class', value: '{{className}} inline-script-uid-18 has-inline-script' },
+{ name: 'to', value: '{{item.url}}' },
+]
+
+el = document.querySelector('.inline-script-uid-15')
 el.inlineScript = `{{
                 navigation.map(item => {
                     const className = document.location.pathname === item.url || document.location.pathname === item.altUrl ? 'current' : ''
@@ -252,7 +252,7 @@ el.inlineScript = `{{
                 })
             }}`
 
-el = document.querySelector('.inline-script-uid-19')
+el = document.querySelector('.inline-script-uid-20')
 el.inlineScriptAttributes = [
 { name: 'to', value: '{{buttonhref}}' },
 ]

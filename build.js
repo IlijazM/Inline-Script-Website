@@ -1,7 +1,7 @@
 const fs = require('fs-extra')
 
 try {
-    fs.copy('src/.building', 'src/.active')
+    fs.copy('src/_building', 'src/_active')
 } catch (err) { }
 
 const compiler = require('./compiler')
@@ -9,7 +9,7 @@ compiler('src', 'docs', () => {
     const fs = require('fs-extra')
 
     try {
-        fs.copy('docs/.build', 'docs/.active')
+        fs.copy('docs/_build', 'docs/_active')
     } catch (err) { }
 
     console.log('compiled successfully')

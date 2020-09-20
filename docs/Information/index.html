@@ -22,9 +22,9 @@
     "preUrl": "Inline-Script-Website"
 }`)
     </script>
-    <script src="../.active/app.js"></script>
+    <script src="../_active/app.js"></script>
     <script src="../scripts/app.js" defer=""></script>
-    <script src="../.active/fade.js" defer=""></script>
+    <script src="../_active/fade.js" defer=""></script>
 
     <!-- Burning brackets -->
     <script src="https://ilijazm.github.io/burning-brackets-js/burning-brackets.min.js"></script>
@@ -44,15 +44,15 @@
     
         <nav class="wrapper inline-script-uid-14">
             <div class="flex left inline-script-uid-15 has-inline-script"><div class="inline-script-uid-16 has-inline-script" to="Inline-Script-Website/">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/' }, 250)" style="cursor:pointer;" class="inline-script-uid-23 has-inline-script">Home</a>
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/' }, 250)" style="cursor:pointer;" class="inline-script-uid-25 has-inline-script">Home</a>
     </div><div class="inline-script-uid-17 has-inline-script" to="Inline-Script-Website/Showcase">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/Showcase' }, 250)" style="cursor:pointer;" class="inline-script-uid-24 has-inline-script">Showcase</a>
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/Showcase' }, 250)" style="cursor:pointer;" class="inline-script-uid-26 has-inline-script">Showcase</a>
     </div><div class="inline-script-uid-18 has-inline-script" to="Inline-Script-Website/Documentation">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/Documentation' }, 250)" style="cursor:pointer;" class="inline-script-uid-25 has-inline-script">Documentation</a>
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/Documentation' }, 250)" style="cursor:pointer;" class="inline-script-uid-27 has-inline-script">Documentation</a>
     </div></div>
             <div class="flex right inline-script-uid-19">
                 <div class="button primary inline-script-uid-20" to="./Install">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = './Install' }, 250)" style="cursor:pointer;" class="inline-script-uid-26 has-inline-script">Install</a>
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = './Install' }, 250)" style="cursor:pointer;" class="inline-script-uid-28 has-inline-script">Install</a>
     </div>
             </div>
         </nav>
@@ -135,8 +135,8 @@
             color: #aaa;
         }</style>
 </div></div>
-        <div load="Information.html" class="inline-script-uid-4"><div class="inline-script-uid-27">
-    <title class="inline-script-uid-28">Inline Script - Information</title>
+        <div load="Information.html" class="inline-script-uid-4"><div class="inline-script-uid-23">
+    <title class="inline-script-uid-24">Inline Script - Information</title>
 </div></div>
         <div load="../components/footer.html" class="inline-script-uid-5"><div class="inline-script-uid-29">
     <footer class="inline-script-uid-30"></footer>
@@ -203,22 +203,6 @@ el.inlineScriptAttributes = [
 { name: 'to', value: '{{buttonhref}}' },
 ]
 
-el = document.querySelector('.inline-script-uid-23')
-el.inlineScript = `
-            {html}
-        `
-el.inlineScriptAttributes = [
-{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
-]
-
-el = document.querySelector('.inline-script-uid-24')
-el.inlineScript = `
-            {html}
-        `
-el.inlineScriptAttributes = [
-{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
-]
-
 el = document.querySelector('.inline-script-uid-25')
 el.inlineScript = `
             {html}
@@ -228,6 +212,22 @@ el.inlineScriptAttributes = [
 ]
 
 el = document.querySelector('.inline-script-uid-26')
+el.inlineScript = `
+            {html}
+        `
+el.inlineScriptAttributes = [
+{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
+]
+
+el = document.querySelector('.inline-script-uid-27')
+el.inlineScript = `
+            {html}
+        `
+el.inlineScriptAttributes = [
+{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
+]
+
+el = document.querySelector('.inline-script-uid-28')
 el.inlineScript = `
             {html}
         `
