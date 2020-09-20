@@ -4,7 +4,7 @@
             <ul>{{
                 documentationPages.map(item => {
                     const className = document.location.pathname === item.url ? 'current' : ''
-                    return (<href to={{item.url}}><li><a class={{className}}>{ item.name }</a></li></href>)
+                    return (<href to={{item.url}}><li><div class="a {{className}}">{ item.name }</div></li></href>)
                 })
             }}</ul>
         </nav>
@@ -35,7 +35,7 @@
 
         <main class="nav">{{
             const entries = Object.entries(documentationPages)
-            let index = parseInt(entries.find(v => v[1].url.substr(1) === document.location.pathname)[0])
+            let index = parseInt(entries.find(v => v[1].url === document.location.pathname)[0])
 
             let previousPage = entries[index - 1]
             let nextPage = entries[index + 1]
@@ -124,11 +124,11 @@
             background: #ddd;
         }
 
-        nav li:hover a {
+        nav li:hover .a {
             color: var(--primary);
         }
 
-        nav a {
+        nav .a {
             text-decoration: none;
             font-size: 14px;
             color: #444;

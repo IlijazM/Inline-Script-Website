@@ -8,6 +8,8 @@ const template_ = require('./template')
 module.exports = async function compile(root, target, callback) {
     const port = 8080
 
+    await fs.copy(root, target)
+
     //#region Server
     const express = require('express')
     const app = express()
@@ -17,10 +19,8 @@ module.exports = async function compile(root, target, callback) {
     const server = app.listen(port, () => console.log('Started server'))
     //#endregion
 
-    await fs.copy(root, target)
-
     const template = fs.readFileSync('template.html', 'utf-8')
-    template_.generate(root, '', template)
+    template_.generate(root, template)
 
     const routes = JSON.parse(fs.readFileSync('routes.json', 'utf-8'))
 

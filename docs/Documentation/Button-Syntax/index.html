@@ -18,7 +18,11 @@
     <!-- Script -->
     <script>
         const globalPath = '../..'
+        const props = JSON.parse(`{
+    "preUrl": "Inline-Script-Website"
+}`)
     </script>
+    <script src="../../.active/app.js"></script>
     <script src="../../scripts/app.js" defer=""></script>
     <script src="../../scripts/fade.js" defer=""></script>
 
@@ -30,7 +34,7 @@
 
 <body class="inline-script-uid-0" finished-compiling="true">
     <link load="../../components/app.html" class="inline-script-uid-1">
-    <div id="fade" class="inline-script-uid-2">
+    <div id="fade" style="transition: opacity 200ms linear;" class="inline-script-uid-2">
         <div load="../../components/header.html" title="Inline-script.js" buttonhref="./Install" class="inline-script-uid-3"><div class="inline-script-uid-7 scoped-css-id-0">
     <div class="outer inline-script-uid-8">
         <header class="wrapper inline-script-uid-9">
@@ -41,16 +45,16 @@
         </header>
     
         <nav class="wrapper inline-script-uid-14">
-            <div class="flex left inline-script-uid-15 has-inline-script"><div class="inline-script-uid-16 has-inline-script" to="./">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = './' }, 250)" style="cursor:pointer;" class="inline-script-uid-53 has-inline-script">Home</a>
-    </div><div class="inline-script-uid-17 has-inline-script" to="./Showcase">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = './Showcase' }, 250)" style="cursor:pointer;" class="inline-script-uid-54 has-inline-script">Showcase</a>
-    </div><div class="inline-script-uid-18 has-inline-script" to="./Documentation">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = './Documentation' }, 250)" style="cursor:pointer;" class="inline-script-uid-55 has-inline-script">Documentation</a>
+            <div class="flex left inline-script-uid-15 has-inline-script"><div class="inline-script-uid-16 has-inline-script" to="Inline-Script-Website/">
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/' }, 250)" style="cursor:pointer;" class="inline-script-uid-56 has-inline-script">Home</a>
+    </div><div class="inline-script-uid-17 has-inline-script" to="Inline-Script-Website/Showcase">
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/Showcase' }, 250)" style="cursor:pointer;" class="inline-script-uid-57 has-inline-script">Showcase</a>
+    </div><div class="inline-script-uid-18 has-inline-script" to="Inline-Script-Website/Documentation">
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/Documentation' }, 250)" style="cursor:pointer;" class="inline-script-uid-58 has-inline-script">Documentation</a>
     </div></div>
             <div class="flex right inline-script-uid-19">
                 <div class="button primary inline-script-uid-20" to="./Install">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = './Install' }, 250)" style="cursor:pointer;" class="inline-script-uid-56 has-inline-script">Install</a>
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = './Install' }, 250)" style="cursor:pointer;" class="inline-script-uid-59 has-inline-script">Install</a>
     </div>
             </div>
         </nav>
@@ -139,28 +143,28 @@
     <div load="../../components/learn.html" class="inline-script-uid-25"><div class="inline-script-uid-60 scoped-css-id-1">
     <div class="learn inline-script-uid-61">
         <nav class="inline-script-uid-62">
-            <ul class="inline-script-uid-63 has-inline-script"><div to="./Documentation/" class="inline-script-uid-64">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = './Documentation/' }, 250)" style="cursor:pointer;" class="inline-script-uid-113 has-inline-script"><li class="inline-script-uid-65"><a class=" inline-script-uid-66 has-inline-script">Introduction</a></li></a>
-    </div><div to="./Documentation/Inline-Script-Syntax/" class="inline-script-uid-67">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = './Documentation/Inline-Script-Syntax/' }, 250)" style="cursor:pointer;" class="inline-script-uid-114 has-inline-script"><li class="inline-script-uid-68"><a class=" inline-script-uid-69 has-inline-script">Inline Script Syntax</a></li></a>
-    </div><div to="./Documentation/Updating-an-element/" class="inline-script-uid-70">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = './Documentation/Updating-an-element/' }, 250)" style="cursor:pointer;" class="inline-script-uid-115 has-inline-script"><li class="inline-script-uid-71"><a class=" inline-script-uid-72 has-inline-script">Updating an element</a></li></a>
-    </div><div to="./Documentation/Button-Syntax/" class="inline-script-uid-73">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = './Documentation/Button-Syntax/' }, 250)" style="cursor:pointer;" class="inline-script-uid-116 has-inline-script"><li class="inline-script-uid-74"><a class=" inline-script-uid-75 has-inline-script">Button syntax</a></li></a>
-    </div><div to="./Documentation/HTML-Syntax/" class="inline-script-uid-76">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = './Documentation/HTML-Syntax/' }, 250)" style="cursor:pointer;" class="inline-script-uid-117 has-inline-script"><li class="inline-script-uid-77"><a class=" inline-script-uid-78 has-inline-script">HTML Syntax</a></li></a>
-    </div><div to="./Documentation/Manipulating-attributes/" class="inline-script-uid-79">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = './Documentation/Manipulating-attributes/' }, 250)" style="cursor:pointer;" class="inline-script-uid-118 has-inline-script"><li class="inline-script-uid-80"><a class=" inline-script-uid-81 has-inline-script">Manipulating attributes</a></li></a>
-    </div><div to="./Documentation/Loading-files/" class="inline-script-uid-82">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = './Documentation/Loading-files/' }, 250)" style="cursor:pointer;" class="inline-script-uid-119 has-inline-script"><li class="inline-script-uid-83"><a class=" inline-script-uid-84 has-inline-script">Loading files</a></li></a>
-    </div><div to="./Documentation/Scope/" class="inline-script-uid-85">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = './Documentation/Scope/' }, 250)" style="cursor:pointer;" class="inline-script-uid-120 has-inline-script"><li class="inline-script-uid-86"><a class=" inline-script-uid-87 has-inline-script">Scope</a></li></a>
-    </div><div to="./Documentation/Scoped-css/" class="inline-script-uid-88">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = './Documentation/Scoped-css/' }, 250)" style="cursor:pointer;" class="inline-script-uid-121 has-inline-script"><li class="inline-script-uid-89"><a class=" inline-script-uid-90 has-inline-script">Scope CSS</a></li></a>
-    </div><div to="./Documentation/Macros/" class="inline-script-uid-91">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = './Documentation/Macros/' }, 250)" style="cursor:pointer;" class="inline-script-uid-122 has-inline-script"><li class="inline-script-uid-92"><a class=" inline-script-uid-93 has-inline-script">Macros</a></li></a>
-    </div><div to="./Documentation/Templates/" class="inline-script-uid-94">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = './Documentation/Templates/' }, 250)" style="cursor:pointer;" class="inline-script-uid-123 has-inline-script"><li class="inline-script-uid-95"><a class=" inline-script-uid-96 has-inline-script">Templates</a></li></a>
+            <ul class="inline-script-uid-63 has-inline-script"><div to="Inline-Script-Website/Documentation/" class="inline-script-uid-64">
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/Documentation/' }, 250)" style="cursor:pointer;" class="inline-script-uid-105 has-inline-script"><li class="inline-script-uid-65"><div class="a  inline-script-uid-66 has-inline-script">Introduction</div></li></a>
+    </div><div to="Inline-Script-Website/Documentation/Inline-Script-Syntax/" class="inline-script-uid-67">
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/Documentation/Inline-Script-Syntax/' }, 250)" style="cursor:pointer;" class="inline-script-uid-106 has-inline-script"><li class="inline-script-uid-68"><div class="a  inline-script-uid-69 has-inline-script">Inline Script Syntax</div></li></a>
+    </div><div to="Inline-Script-Website/Documentation/Updating-an-element/" class="inline-script-uid-70">
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/Documentation/Updating-an-element/' }, 250)" style="cursor:pointer;" class="inline-script-uid-107 has-inline-script"><li class="inline-script-uid-71"><div class="a  inline-script-uid-72 has-inline-script">Updating an element</div></li></a>
+    </div><div to="Inline-Script-Website/Documentation/Button-Syntax/" class="inline-script-uid-73">
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/Documentation/Button-Syntax/' }, 250)" style="cursor:pointer;" class="inline-script-uid-108 has-inline-script"><li class="inline-script-uid-74"><div class="a  inline-script-uid-75 has-inline-script">Button syntax</div></li></a>
+    </div><div to="Inline-Script-Website/Documentation/HTML-Syntax/" class="inline-script-uid-76">
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/Documentation/HTML-Syntax/' }, 250)" style="cursor:pointer;" class="inline-script-uid-109 has-inline-script"><li class="inline-script-uid-77"><div class="a  inline-script-uid-78 has-inline-script">HTML Syntax</div></li></a>
+    </div><div to="Inline-Script-Website/Documentation/Manipulating-attributes/" class="inline-script-uid-79">
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/Documentation/Manipulating-attributes/' }, 250)" style="cursor:pointer;" class="inline-script-uid-110 has-inline-script"><li class="inline-script-uid-80"><div class="a  inline-script-uid-81 has-inline-script">Manipulating attributes</div></li></a>
+    </div><div to="Inline-Script-Website/Documentation/Loading-files/" class="inline-script-uid-82">
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/Documentation/Loading-files/' }, 250)" style="cursor:pointer;" class="inline-script-uid-111 has-inline-script"><li class="inline-script-uid-83"><div class="a  inline-script-uid-84 has-inline-script">Loading files</div></li></a>
+    </div><div to="Inline-Script-Website/Documentation/Scope/" class="inline-script-uid-85">
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/Documentation/Scope/' }, 250)" style="cursor:pointer;" class="inline-script-uid-112 has-inline-script"><li class="inline-script-uid-86"><div class="a  inline-script-uid-87 has-inline-script">Scope</div></li></a>
+    </div><div to="Inline-Script-Website/Documentation/Scoped-css/" class="inline-script-uid-88">
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/Documentation/Scoped-css/' }, 250)" style="cursor:pointer;" class="inline-script-uid-113 has-inline-script"><li class="inline-script-uid-89"><div class="a  inline-script-uid-90 has-inline-script">Scope CSS</div></li></a>
+    </div><div to="Inline-Script-Website/Documentation/Macros/" class="inline-script-uid-91">
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/Documentation/Macros/' }, 250)" style="cursor:pointer;" class="inline-script-uid-114 has-inline-script"><li class="inline-script-uid-92"><div class="a  inline-script-uid-93 has-inline-script">Macros</div></li></a>
+    </div><div to="Inline-Script-Website/Documentation/Templates/" class="inline-script-uid-94">
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = 'Inline-Script-Website/Documentation/Templates/' }, 250)" style="cursor:pointer;" class="inline-script-uid-115 has-inline-script"><li class="inline-script-uid-95"><div class="a  inline-script-uid-96 has-inline-script">Templates</div></li></a>
     </div></ul>
         </nav>
         <main class="inline-script-uid-97">
@@ -233,26 +237,14 @@
 
         <div class="nav-right inline-script-uid-99 has-inline-script"><li class="inline-script-uid-100 has-inline-script">Basics</li><li class="inline-script-uid-101 has-inline-script">Practical example</li></div>
 
-        <main class="nav inline-script-uid-102 has-inline-script"><div to="./Documentation/Updating-an-element/" class="inline-script-uid-103">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = './Documentation/Updating-an-element/' }, 250)" style="cursor:pointer;" class="inline-script-uid-124 has-inline-script">
-                    <i class="fa fa-angle-left inline-script-uid-104"></i>
-                    <b class="color inline-script-uid-105">Previous</b>
-                    <b class="inline-script-uid-106 has-inline-script">Updating an element</b>
-                </a>
-    </div><div to="./Documentation/HTML-Syntax/" class="inline-script-uid-107">
-        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = './Documentation/HTML-Syntax/' }, 250)" style="cursor:pointer;" class="inline-script-uid-125 has-inline-script">
-                    <b class="color inline-script-uid-108">Next</b>
-                    <b class="inline-script-uid-109 has-inline-script">HTML Syntax</b>
-                    <i class="fa fa-angle-right inline-script-uid-110"></i>
-                </a>
-    </div></main>
+        <main class="nav inline-script-uid-102 has-inline-script" style="background: red; color: yellow; font-size: 20px;">TypeError: Cannot read property '0' of undefined</main>
     </div>
 
-    <script class="inline-script-uid-111">
+    <script class="inline-script-uid-103">
         PR.prettyPrint()
     </script>
 
-    <style class="inline-script-uid-112">
+    <style class="inline-script-uid-104">
 .scoped-css-id-1 nav {
             z-index: 5;
             position: absolute;
@@ -305,11 +297,11 @@
             background: #ddd;
         }
 
-.scoped-css-id-1 nav li:hover a {
+.scoped-css-id-1 nav li:hover .a {
             color: var(--primary);
         }
 
-.scoped-css-id-1 nav a {
+.scoped-css-id-1 nav .a {
             text-decoration: none;
             font-size: 14px;
             color: #444;
@@ -422,10 +414,10 @@
         }</style>
 </div></div>
 </div></div>
-        <div load="../../components/footer.html" class="inline-script-uid-5"><div class="inline-script-uid-57">
-    <footer class="inline-script-uid-58"></footer>
+        <div load="../../components/footer.html" class="inline-script-uid-5"><div class="inline-script-uid-53">
+    <footer class="inline-script-uid-54"></footer>
 
-    <style class="inline-script-uid-59">
+    <style class="inline-script-uid-55">
         footer {
             position: absolute;
             z-index: 10;
@@ -492,31 +484,31 @@ el.inlineScriptAttributes = [
 { name: 'load', value: '{{globalPath}}/components/learn.html' },
 ]
 
-el = document.querySelector('.inline-script-uid-53')
-el.inlineScript = `
-            {html}
-        `
-el.inlineScriptAttributes = [
-{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
-]
-
-el = document.querySelector('.inline-script-uid-54')
-el.inlineScript = `
-            {html}
-        `
-el.inlineScriptAttributes = [
-{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
-]
-
-el = document.querySelector('.inline-script-uid-55')
-el.inlineScript = `
-            {html}
-        `
-el.inlineScriptAttributes = [
-{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
-]
-
 el = document.querySelector('.inline-script-uid-56')
+el.inlineScript = `
+            {html}
+        `
+el.inlineScriptAttributes = [
+{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
+]
+
+el = document.querySelector('.inline-script-uid-57')
+el.inlineScript = `
+            {html}
+        `
+el.inlineScriptAttributes = [
+{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
+]
+
+el = document.querySelector('.inline-script-uid-58')
+el.inlineScript = `
+            {html}
+        `
+el.inlineScriptAttributes = [
+{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
+]
+
+el = document.querySelector('.inline-script-uid-59')
 el.inlineScript = `
             {html}
         `
@@ -527,7 +519,7 @@ el.inlineScriptAttributes = [
 el = document.querySelector('.inline-script-uid-66')
 el.inlineScript = `{ item.name }`
 el.inlineScriptAttributes = [
-{ name: 'class', value: '{{className}} inline-script-uid-66 has-inline-script' },
+{ name: 'class', value: 'a {{className}} inline-script-uid-66 has-inline-script' },
 ]
 
 el = document.querySelector('.inline-script-uid-64')
@@ -538,7 +530,7 @@ el.inlineScriptAttributes = [
 el = document.querySelector('.inline-script-uid-69')
 el.inlineScript = `{ item.name }`
 el.inlineScriptAttributes = [
-{ name: 'class', value: '{{className}} inline-script-uid-69 has-inline-script' },
+{ name: 'class', value: 'a {{className}} inline-script-uid-69 has-inline-script' },
 ]
 
 el = document.querySelector('.inline-script-uid-67')
@@ -549,7 +541,7 @@ el.inlineScriptAttributes = [
 el = document.querySelector('.inline-script-uid-72')
 el.inlineScript = `{ item.name }`
 el.inlineScriptAttributes = [
-{ name: 'class', value: '{{className}} inline-script-uid-72 has-inline-script' },
+{ name: 'class', value: 'a {{className}} inline-script-uid-72 has-inline-script' },
 ]
 
 el = document.querySelector('.inline-script-uid-70')
@@ -560,7 +552,7 @@ el.inlineScriptAttributes = [
 el = document.querySelector('.inline-script-uid-75')
 el.inlineScript = `{ item.name }`
 el.inlineScriptAttributes = [
-{ name: 'class', value: '{{className}} inline-script-uid-75 has-inline-script' },
+{ name: 'class', value: 'a {{className}} inline-script-uid-75 has-inline-script' },
 ]
 
 el = document.querySelector('.inline-script-uid-73')
@@ -571,7 +563,7 @@ el.inlineScriptAttributes = [
 el = document.querySelector('.inline-script-uid-78')
 el.inlineScript = `{ item.name }`
 el.inlineScriptAttributes = [
-{ name: 'class', value: '{{className}} inline-script-uid-78 has-inline-script' },
+{ name: 'class', value: 'a {{className}} inline-script-uid-78 has-inline-script' },
 ]
 
 el = document.querySelector('.inline-script-uid-76')
@@ -582,7 +574,7 @@ el.inlineScriptAttributes = [
 el = document.querySelector('.inline-script-uid-81')
 el.inlineScript = `{ item.name }`
 el.inlineScriptAttributes = [
-{ name: 'class', value: '{{className}} inline-script-uid-81 has-inline-script' },
+{ name: 'class', value: 'a {{className}} inline-script-uid-81 has-inline-script' },
 ]
 
 el = document.querySelector('.inline-script-uid-79')
@@ -593,7 +585,7 @@ el.inlineScriptAttributes = [
 el = document.querySelector('.inline-script-uid-84')
 el.inlineScript = `{ item.name }`
 el.inlineScriptAttributes = [
-{ name: 'class', value: '{{className}} inline-script-uid-84 has-inline-script' },
+{ name: 'class', value: 'a {{className}} inline-script-uid-84 has-inline-script' },
 ]
 
 el = document.querySelector('.inline-script-uid-82')
@@ -604,7 +596,7 @@ el.inlineScriptAttributes = [
 el = document.querySelector('.inline-script-uid-87')
 el.inlineScript = `{ item.name }`
 el.inlineScriptAttributes = [
-{ name: 'class', value: '{{className}} inline-script-uid-87 has-inline-script' },
+{ name: 'class', value: 'a {{className}} inline-script-uid-87 has-inline-script' },
 ]
 
 el = document.querySelector('.inline-script-uid-85')
@@ -615,7 +607,7 @@ el.inlineScriptAttributes = [
 el = document.querySelector('.inline-script-uid-90')
 el.inlineScript = `{ item.name }`
 el.inlineScriptAttributes = [
-{ name: 'class', value: '{{className}} inline-script-uid-90 has-inline-script' },
+{ name: 'class', value: 'a {{className}} inline-script-uid-90 has-inline-script' },
 ]
 
 el = document.querySelector('.inline-script-uid-88')
@@ -626,7 +618,7 @@ el.inlineScriptAttributes = [
 el = document.querySelector('.inline-script-uid-93')
 el.inlineScript = `{ item.name }`
 el.inlineScriptAttributes = [
-{ name: 'class', value: '{{className}} inline-script-uid-93 has-inline-script' },
+{ name: 'class', value: 'a {{className}} inline-script-uid-93 has-inline-script' },
 ]
 
 el = document.querySelector('.inline-script-uid-91')
@@ -637,7 +629,7 @@ el.inlineScriptAttributes = [
 el = document.querySelector('.inline-script-uid-96')
 el.inlineScript = `{ item.name }`
 el.inlineScriptAttributes = [
-{ name: 'class', value: '{{className}} inline-script-uid-96 has-inline-script' },
+{ name: 'class', value: 'a {{className}} inline-script-uid-96 has-inline-script' },
 ]
 
 el = document.querySelector('.inline-script-uid-94')
@@ -649,7 +641,7 @@ el = document.querySelector('.inline-script-uid-63')
 el.inlineScript = `{{
                 documentationPages.map(item => {
                     const className = document.location.pathname === item.url ? 'current' : ''
-                    return eval(\`eval(eval(inlineScript).toString());inlineScript(\\\`<href to="{{item.url}}"><li><a class="{{className}}">{ item.name }</a></li></href>\\\`)\`)
+                    return eval(\`eval(eval(inlineScript).toString());inlineScript(\\\`<href to="{{item.url}}"><li><div class="a {{className}}">{ item.name }</div></li></href>\\\`)\`)
                 })
             }}`
 
@@ -702,26 +694,10 @@ el.inlineScript = `{{
             })
         }}`
 
-el = document.querySelector('.inline-script-uid-106')
-el.inlineScript = `{ previousPage.name }`
-
-el = document.querySelector('.inline-script-uid-103')
-el.inlineScriptAttributes = [
-{ name: 'to', value: '{{previousPage.url}}' },
-]
-
-el = document.querySelector('.inline-script-uid-109')
-el.inlineScript = `{ nextPage.name }`
-
-el = document.querySelector('.inline-script-uid-107')
-el.inlineScriptAttributes = [
-{ name: 'to', value: '{{nextPage.url}}' },
-]
-
 el = document.querySelector('.inline-script-uid-102')
 el.inlineScript = `{{
             const entries = Object.entries(documentationPages)
-            let index = parseInt(entries.find(v => v[1].url.substr(1) === document.location.pathname)[0])
+            let index = parseInt(entries.find(v => v[1].url === document.location.pathname)[0])
 
             let previousPage = entries[index - 1]
             let nextPage = entries[index + 1]
@@ -752,6 +728,70 @@ el.inlineScript = `{{
             output;
         }}`
 
+el = document.querySelector('.inline-script-uid-105')
+el.inlineScript = `
+            {html}
+        `
+el.inlineScriptAttributes = [
+{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
+]
+
+el = document.querySelector('.inline-script-uid-106')
+el.inlineScript = `
+            {html}
+        `
+el.inlineScriptAttributes = [
+{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
+]
+
+el = document.querySelector('.inline-script-uid-107')
+el.inlineScript = `
+            {html}
+        `
+el.inlineScriptAttributes = [
+{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
+]
+
+el = document.querySelector('.inline-script-uid-108')
+el.inlineScript = `
+            {html}
+        `
+el.inlineScriptAttributes = [
+{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
+]
+
+el = document.querySelector('.inline-script-uid-109')
+el.inlineScript = `
+            {html}
+        `
+el.inlineScriptAttributes = [
+{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
+]
+
+el = document.querySelector('.inline-script-uid-110')
+el.inlineScript = `
+            {html}
+        `
+el.inlineScriptAttributes = [
+{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
+]
+
+el = document.querySelector('.inline-script-uid-111')
+el.inlineScript = `
+            {html}
+        `
+el.inlineScriptAttributes = [
+{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
+]
+
+el = document.querySelector('.inline-script-uid-112')
+el.inlineScript = `
+            {html}
+        `
+el.inlineScriptAttributes = [
+{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
+]
+
 el = document.querySelector('.inline-script-uid-113')
 el.inlineScript = `
             {html}
@@ -769,86 +809,6 @@ el.inlineScriptAttributes = [
 ]
 
 el = document.querySelector('.inline-script-uid-115')
-el.inlineScript = `
-            {html}
-        `
-el.inlineScriptAttributes = [
-{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
-]
-
-el = document.querySelector('.inline-script-uid-116')
-el.inlineScript = `
-            {html}
-        `
-el.inlineScriptAttributes = [
-{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
-]
-
-el = document.querySelector('.inline-script-uid-117')
-el.inlineScript = `
-            {html}
-        `
-el.inlineScriptAttributes = [
-{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
-]
-
-el = document.querySelector('.inline-script-uid-118')
-el.inlineScript = `
-            {html}
-        `
-el.inlineScriptAttributes = [
-{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
-]
-
-el = document.querySelector('.inline-script-uid-119')
-el.inlineScript = `
-            {html}
-        `
-el.inlineScriptAttributes = [
-{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
-]
-
-el = document.querySelector('.inline-script-uid-120')
-el.inlineScript = `
-            {html}
-        `
-el.inlineScriptAttributes = [
-{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
-]
-
-el = document.querySelector('.inline-script-uid-121')
-el.inlineScript = `
-            {html}
-        `
-el.inlineScriptAttributes = [
-{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
-]
-
-el = document.querySelector('.inline-script-uid-122')
-el.inlineScript = `
-            {html}
-        `
-el.inlineScriptAttributes = [
-{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
-]
-
-el = document.querySelector('.inline-script-uid-123')
-el.inlineScript = `
-            {html}
-        `
-el.inlineScriptAttributes = [
-{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
-]
-
-el = document.querySelector('.inline-script-uid-124')
-el.inlineScript = `
-            {html}
-        `
-el.inlineScriptAttributes = [
-{ name: 'onclick', value: 'fadeOut();setTimeout(() => { document.location.pathname = \'{{to}}\' }, 250)' },
-]
-
-el = document.querySelector('.inline-script-uid-125')
 el.inlineScript = `
             {html}
         `

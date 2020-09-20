@@ -1,6 +1,6 @@
 const fs = require('fs')
 
-async function generate(root, pathName, template) {
+async function generate(root, template) {
     const routes = JSON.parse(fs.readFileSync('routes.json', 'utf-8'))
 
     fs.mkdir(root, { recursive: true }, (err) => {
@@ -14,6 +14,8 @@ function generateFiles(root, route, template, globalPath) {
     const pathName = route.url === '' ? '.' : globalPath
 
     let html = template.replace(/\"\~\//gm, "\"" + pathName + "/")
+
+    const props = fs.readFileSync('props.json', 'utf-8')
 
     html = eval(compileTemplate + 'compileTemplate(html)')
 
