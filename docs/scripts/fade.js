@@ -4,7 +4,7 @@ fadeElement.style.opacity = 0
 
 setTimeout(() => {
     fadeElement.style.transition = 'opacity 200ms linear'
-}, 10);
+})
 
 function fadeIn() {
     fadeElement.style.opacity = ''

@@ -11,7 +11,7 @@
             <div class="flex left">{{
                 navigation.map(item => {
                     const className = document.location.pathname === item.url || document.location.pathname === item.altUrl ? 'current' : ''
-                    return (<href class={{className}} to={{item.url}}>{ item.name }</href>)
+                    return (<href class={{className}} to="{{item.url}}">{ item.name }</href>)
                 })
             }}</div>
             <div class="flex right">
