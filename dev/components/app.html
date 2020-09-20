@@ -1,0 +1,27 @@
+<div>
+    <define flex>
+        <div style="display: flex">{{ html }}</div>
+    </define>
+
+    <define flex-center>
+        <div style="display: flex; justify-content: center; align-items: center;">{{ html }}</div>
+    </define>
+
+    <define flex-expand>
+        <div style="width: 100%">{{ html }}</div>
+    </define>
+
+    <define wrapper>
+        <div class="wrapper">{{ html }}</div>
+    </define>
+
+    <define inline>
+        <div style="display:inline;margin:0;">{{ html }}</div>
+    </define>
+
+    <define href>
+        <a onclick="fadeOut();setTimeout(() => { document.location.pathname = '{{to}}' }, 250)" style="cursor:pointer;">
+            {html}
+        </a>
+    </define>
+</div>
